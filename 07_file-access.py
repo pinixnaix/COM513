@@ -20,14 +20,16 @@ def menu():
 
 
 def read_file(path):
-    """Function to print the devices text file"""
-    with open(path, "r") as file:
+    """Function to read and print the devices text file"""
+    with open(path) as file:
         data = file.read()
         print(data)
-    
 
 def write_file(path):
-    return
+    """Function to add devices to the text file"""
+    with open(path) as file:
+        data = file.read()
+        print(data)
 
 
 def run():
@@ -35,7 +37,7 @@ def run():
     while True:
         option = menu()
         if option == 1:
-            read_file("/workspaces/COM513/devices.txt")
+            read_file("devices.txt")
         elif option == 2:
             write_file("/workspaces/COM513/devices.txt")
         elif option ==3:
