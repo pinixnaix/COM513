@@ -10,7 +10,7 @@ import tui, process
 def run():
 
     tui.welcome()
-
+    choice = tui.menu()
 
 if __name__ == "__main__":
     run()
