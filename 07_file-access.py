@@ -20,6 +20,7 @@ def menu():
 
 
 def read_file(path):
+    print(path)
     return
 
 def write_file(path):
