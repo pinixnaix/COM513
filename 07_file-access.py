@@ -4,14 +4,14 @@ activity that open a file and asks the user for more devices to be added to the 
 
 def menu():
     """ Function to display a menu"""
-    print("-"*20+" DEVICES "+"-"*20)
+    print("-"*50+"\n"+" "*17+"NETWORK DEVICES \n"+"-"*50)
 
     print("\n[1] - Read the devices from the text file"
           "\n[2] - Add devices to the text file"
           "\n[3] - Exit")
         
     try:
-        option = int(input("Please choose an option: "))
+        option = int(input("\nPlease choose an option: "))
     except ValueError:
         option = int(input("Error!!! Please enter a valid option: "))
     except TypeError:
@@ -20,8 +20,11 @@ def menu():
 
 
 def read_file(path):
-    print(path)
-    return
+    """Function to print the devices text file"""
+    with open(path, "r") as file:
+        data = file.read()
+        print(data)
+    
 
 def write_file(path):
     return
@@ -32,11 +35,12 @@ def run():
     while True:
         option = menu()
         if option == 1:
-            read_file("devices.txt")
+            read_file("/workspaces/COM513/devices.txt")
         elif option == 2:
-            write_file("devices.txt")
+            write_file("/workspaces/COM513/devices.txt")
         elif option ==3:
+            print("\n"+"-"*50+"\n"+" "*17+"THANK YOU!!!\n"+"-"*50)
             break
-    
+
 if __name__ == '__main__':
     run()
