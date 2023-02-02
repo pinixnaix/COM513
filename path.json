@@ -1,0 +1,772 @@
+{
+    "route": {
+        "sessionId": "AKAA5gcAAFoBAAAFAAAAMAAAALIAAAB42mPYxMDAyMTAwMCekVqUapWcu7X0HiuQy_D___96juQb_-vqHxqnnATSmx4YpzBgATCNcd2TOED8qOKPy5habryon1u6IGXq9Rf1akCaAQdI-2htm8PIwLCwi4HRocGY4QBEuEWFrcGBgUFsgg-HDoODgiKrgyJQtNFJkYWBIYCBCQB0bCyrNMRyDg:car",
+        "realTime": 6914,
+        "distance": 76.7884,
+        "time": 5724,
+        "formattedTime": "01:35:24",
+        "hasHighway": true,
+        "hasTollRoad": true,
+        "hasBridge": true,
+        "hasSeasonalClosure": false,
+        "hasTunnel": true,
+        "hasFerry": false,
+        "hasUnpaved": false,
+        "hasTimedRestriction": false,
+        "hasCountryCross": false,
+        "legs": [
+            {
+                "index": 0,
+                "hasTollRoad": true,
+                "hasHighway": true,
+                "hasBridge": true,
+                "hasUnpaved": false,
+                "hasTunnel": true,
+                "hasSeasonalClosure": false,
+                "hasFerry": false,
+                "hasCountryCross": false,
+                "hasTimedRestriction": false,
+                "distance": 76.7884,
+                "time": 6914,
+                "formattedTime": "01:55:14",
+                "origIndex": 0,
+                "origNarrative": "",
+                "destIndex": 0,
+                "destNarrative": "",
+                "maneuvers": [
+                    {
+                        "index": 0,
+                        "distance": 0.2554,
+                        "narrative": "Head toward Grosvenor Square on Cumberland Place (A3024). Go for 0.3 mi.",
+                        "time": 81,
+                        "direction": 8,
+                        "directionName": "East",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:01:21",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.909973,
+                            "lng": -1.407091
+                        },
+                        "turnType": 0,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A3024",
+                            "Cumberland Place",
+                            "Brunswick Place"
+                        ]
+                    },
+                    {
+                        "index": 1,
+                        "distance": 2.1406,
+                        "narrative": "Take the 1st exit from Charlotte Place roundabout onto Dorset Street (A33) toward Ring Road/London/Winchester/(M3)/Eastleigh/(A335)/General Hospital. Go for 2.1 mi.",
+                        "time": 432,
+                        "direction": 1,
+                        "directionName": "North",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:07:12",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.91059999999998,
+                            "lng": -1.4016400000000002
+                        },
+                        "turnType": -1,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "Charlotte Place",
+                            "A33",
+                            "Dorset Street",
+                            "The Avenue",
+                            "Bassett Avenue"
+                        ]
+                    },
+                    {
+                        "index": 2,
+                        "distance": 0.7947,
+                        "narrative": "Take the 3rd exit from roundabout onto Bassett Avenue (A33) toward London/Winchester/(M3). Go for 0.8 mi.",
+                        "time": 123,
+                        "direction": 1,
+                        "directionName": "North",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:02:03",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.94067999999997,
+                            "lng": -1.407
+                        },
+                        "turnType": -1,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A33",
+                            "Bassett Avenue"
+                        ]
+                    },
+                    {
+                        "index": 3,
+                        "distance": 0.0957,
+                        "narrative": "Take the 1st exit from Chilworth Roundabout roundabout onto A27 toward London/Eastleigh/Winchester. Go for 505 ft.",
+                        "time": 13,
+                        "direction": 3,
+                        "directionName": "Northeast",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:13",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.95194999999999,
+                            "lng": -1.40426
+                        },
+                        "turnType": -1,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "Chilworth Roundabout",
+                            "A27"
+                        ]
+                    },
+                    {
+                        "index": 4,
+                        "distance": 0.4691,
+                        "narrative": "Keep right onto M3 toward London/Eastleigh/Winchester. Go for 0.5 mi.",
+                        "time": 37,
+                        "direction": 3,
+                        "directionName": "Northeast",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:37",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.95323999999999,
+                            "lng": -1.40362
+                        },
+                        "turnType": 16,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "M3"
+                        ]
+                    },
+                    {
+                        "index": 5,
+                        "distance": 58.2772,
+                        "narrative": "Keep left onto M3. Go for 58.3 mi.",
+                        "time": 3524,
+                        "direction": 3,
+                        "directionName": "Northeast",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:58:44",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.95850000000001,
+                            "lng": -1.3972700000000002
+                        },
+                        "turnType": 17,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "M3"
+                        ]
+                    },
+                    {
+                        "index": 6,
+                        "distance": 1.6796,
+                        "narrative": "Continue on A316. Go for 1.7 mi.",
+                        "time": 133,
+                        "direction": 3,
+                        "directionName": "Northeast",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:02:13",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.42154000000007,
+                            "lng": -0.4135300000000023
+                        },
+                        "turnType": 0,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A316",
+                            "Country Way"
+                        ]
+                    },
+                    {
+                        "index": 7,
+                        "distance": 0.9476,
+                        "narrative": "Keep right onto Twickenham Road (A316) toward Central London/Richmond. Go for 0.9 mi.",
+                        "time": 108,
+                        "direction": 8,
+                        "directionName": "East",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:01:48",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.43544000000008,
+                            "lng": -0.38380000000000225
+                        },
+                        "turnType": 16,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A316",
+                            "Twickenham Road",
+                            "Great Chertsey Road"
+                        ]
+                    },
+                    {
+                        "index": 8,
+                        "distance": 1.4403,
+                        "narrative": "Take the 2nd exit from Hospital Bridge Roundabout roundabout onto Chertsey Road (A316) toward Central London/Richmond. Go for 1.4 mi.",
+                        "time": 176,
+                        "direction": 8,
+                        "directionName": "East",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:02:56",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.442660000000075,
+                            "lng": -0.3652300000000023
+                        },
+                        "turnType": -1,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "Hospital Bridge Roundabout",
+                            "A316",
+                            "Chertsey Road"
+                        ]
+                    },
+                    {
+                        "index": 9,
+                        "distance": 0.3331,
+                        "narrative": "Take the 3rd exit from Whitton Road Roundabout roundabout onto Chertsey Road (A316) toward Richmond. Go for 0.3 mi.",
+                        "time": 60,
+                        "direction": 8,
+                        "directionName": "East",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:01:00",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.454000000000086,
+                            "lng": -0.33764000000000227
+                        },
+                        "turnType": -1,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "Whitton Road Roundabout",
+                            "A316",
+                            "Chertsey Road"
+                        ]
+                    },
+                    {
+                        "index": 10,
+                        "distance": 1.5708,
+                        "narrative": "Pass 2 roundabouts and continue on The Avenue (A316). Go for 1.6 mi.",
+                        "time": 232,
+                        "direction": 8,
+                        "directionName": "East",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:03:52",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.455600000000096,
+                            "lng": -0.33044000000000223
+                        },
+                        "turnType": -1,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "London Road Roundabout",
+                            "A316",
+                            "Chertsey Road",
+                            "Cavendish House",
+                            "St Margarets Roundabout",
+                            "The Avenue",
+                            "Twickenham Road",
+                            "Richmond Circus"
+                        ]
+                    },
+                    {
+                        "index": 11,
+                        "distance": 0.4965,
+                        "narrative": "Turn left onto Lower Mortlake Road (A316) toward C. London/Hammersmith/(A4)/(S. Circular)/Chiswick. Go for 0.5 mi.",
+                        "time": 93,
+                        "direction": 8,
+                        "directionName": "East",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:01:33",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.465070000000125,
+                            "lng": -0.2991300000000022
+                        },
+                        "turnType": 6,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A316",
+                            "Lower Mortlake Road"
+                        ]
+                    },
+                    {
+                        "index": 12,
+                        "distance": 2.0636,
+                        "narrative": "Take the 2nd exit from Manor Circus roundabout onto Lower Richmond Road (A316) toward C.London/Hammersmith/Chsiwick/(A4)/(S.Circular). Go for 2.1 mi.",
+                        "time": 366,
+                        "direction": 3,
+                        "directionName": "Northeast",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:06:06",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.46767000000011,
+                            "lng": -0.28848000000000223
+                        },
+                        "turnType": -1,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "Manor Circus",
+                            "A316",
+                            "Lower Richmond Road",
+                            "Popham Gardens",
+                            "Clifford Avenue",
+                            "Chiswick Bridge",
+                            "Great Chertsey Road",
+                            "Burlington Lane"
+                        ]
+                    },
+                    {
+                        "index": 13,
+                        "distance": 0.2703,
+                        "narrative": "Keep right onto Hogarth Flyover. Go for 0.3 mi.",
+                        "time": 47,
+                        "direction": 3,
+                        "directionName": "Northeast",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:47",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.48576000000013,
+                            "lng": -0.25364000000000225
+                        },
+                        "turnType": 16,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "Hogarth Flyover"
+                        ]
+                    },
+                    {
+                        "index": 14,
+                        "distance": 0.8233,
+                        "narrative": "Continue on Great West Road (A4). Go for 0.8 mi.",
+                        "time": 97,
+                        "direction": 8,
+                        "directionName": "East",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:01:37",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.48839000000012,
+                            "lng": -0.24961000000000222
+                        },
+                        "turnType": 0,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A4",
+                            "Great West Road"
+                        ]
+                    },
+                    {
+                        "index": 15,
+                        "distance": 1.528,
+                        "narrative": "Keep right onto Hammersmith Flyover (A4) toward Central London/Westfield/Olympia. Go for 1.5 mi.",
+                        "time": 324,
+                        "direction": 8,
+                        "directionName": "East",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:05:24",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.491010000000124,
+                            "lng": -0.23174000000000225
+                        },
+                        "turnType": 16,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A4",
+                            "Hammersmith Flyover",
+                            "Talgarth Road",
+                            "West Cromwell Road"
+                        ]
+                    },
+                    {
+                        "index": 16,
+                        "distance": 1.7678,
+                        "narrative": "Keep left onto West Cromwell Road (A4) toward Knightsbridge. Go for 1.8 mi.",
+                        "time": 472,
+                        "direction": 8,
+                        "directionName": "East",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:07:52",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.49382000000012,
+                            "lng": -0.19780000000000228
+                        },
+                        "turnType": 17,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A4",
+                            "West Cromwell Road",
+                            "Cromwell Road",
+                            "Savoy Court",
+                            "Fraser Place",
+                            "Derment House",
+                            "Cromwell Gardens",
+                            "Thurloe Place",
+                            "Brompton Road",
+                            "Silver City House"
+                        ]
+                    },
+                    {
+                        "index": 17,
+                        "distance": 0.2175,
+                        "narrative": "Turn right onto Knightsbridge (A4) toward Central London. Go for 0.2 mi.",
+                        "time": 62,
+                        "direction": 8,
+                        "directionName": "East",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:01:02",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.501780000000146,
+                            "lng": -0.16092000000000226
+                        },
+                        "turnType": 2,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A4",
+                            "Knightsbridge",
+                            "Brompton Arcade",
+                            "The Parkside"
+                        ]
+                    },
+                    {
+                        "index": 18,
+                        "distance": 0.3821,
+                        "narrative": "Keep right onto A4 toward Piccadilly. Go for 0.4 mi.",
+                        "time": 74,
+                        "direction": 8,
+                        "directionName": "East",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:01:14",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.50246000000015,
+                            "lng": -0.15600000000000225
+                        },
+                        "turnType": 16,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A4"
+                        ]
+                    },
+                    {
+                        "index": 19,
+                        "distance": 0.3983,
+                        "narrative": "Continue on Piccadilly (A4). Go for 0.4 mi.",
+                        "time": 164,
+                        "direction": 3,
+                        "directionName": "Northeast",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:02:44",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.50425000000017,
+                            "lng": -0.14786000000000224
+                        },
+                        "turnType": 0,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A4",
+                            "Piccadilly"
+                        ]
+                    },
+                    {
+                        "index": 20,
+                        "distance": 0.2106,
+                        "narrative": "Turn right onto St James's Street (A4). Go for 0.2 mi.",
+                        "time": 62,
+                        "direction": 5,
+                        "directionName": "Southeast",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:01:02",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.50780000000017,
+                            "lng": -0.14058000000000223
+                        },
+                        "turnType": 2,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A4",
+                            "St James's Street"
+                        ]
+                    },
+                    {
+                        "index": 21,
+                        "distance": 0.4319,
+                        "narrative": "Continue on Pall Mall (A4). Go for 0.4 mi.",
+                        "time": 157,
+                        "direction": 8,
+                        "directionName": "East",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:02:37",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.505280000000155,
+                            "lng": -0.1379200000000022
+                        },
+                        "turnType": 0,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A4",
+                            "Pall Mall",
+                            "Westminster Mansions",
+                            "Pall Mall East"
+                        ]
+                    },
+                    {
+                        "index": 22,
+                        "distance": 0.0913,
+                        "narrative": "Continue on Trafalgar Square (A4). Go for 482 ft.",
+                        "time": 39,
+                        "direction": 5,
+                        "directionName": "Southeast",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:39",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.50830000000016,
+                            "lng": -0.12916000000000216
+                        },
+                        "turnType": 0,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A4",
+                            "Trafalgar Square"
+                        ]
+                    },
+                    {
+                        "index": 23,
+                        "distance": 0.1031,
+                        "narrative": "Take the 3rd exit from Charing Cross roundabout onto Whitehall (A3212). Go for 0.1 mi.",
+                        "time": 38,
+                        "direction": 5,
+                        "directionName": "Southeast",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:38",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.50755000000015,
+                            "lng": -0.12785000000000216
+                        },
+                        "turnType": -1,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "Charing Cross",
+                            "A3212",
+                            "Whitehall",
+                            "Whitehall House"
+                        ]
+                    },
+                    {
+                        "index": 24,
+                        "distance": 0,
+                        "narrative": "Arrive at Whitehall (A3212).",
+                        "time": 0,
+                        "direction": 0,
+                        "directionName": "None",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:00",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.50642000000014,
+                            "lng": -0.12721000000000215
+                        },
+                        "turnType": 0,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": []
+                    }
+                ]
+            }
+        ],
+        "options": {
+            "routeType": "FASTEST",
+            "narrativeType": "text",
+            "enhancedNarrative": false,
+            "walkingSpeed": -1,
+            "highwayEfficiency": 22,
+            "avoids": false,
+            "generalize": -1,
+            "shapeFormat": "raw",
+            "unit": "M",
+            "locale": "en_US",
+            "useTraffic": false,
+            "timeType": 0,
+            "dateType": 0,
+            "doReverseGeocode": true,
+            "sideOfStreetDisplay": true
+        },
+        "boundingBox": {
+            "ul": {
+                "lat": 51.50830000000016,
+                "lng": -1.4071
+            },
+            "lr": {
+                "lat": 50.909973,
+                "lng": -0.12721000000000215
+            }
+        },
+        "maxRoutes": "",
+        "locations": [
+            {
+                "street": "",
+                "adminArea6": "",
+                "adminArea6Type": "Neighborhood",
+                "adminArea5": "Southampton",
+                "adminArea5Type": "City",
+                "adminArea4": "Hampshire",
+                "adminArea4Type": "County",
+                "adminArea3": "ENG",
+                "adminArea3Type": "State",
+                "adminArea1": "GB",
+                "adminArea1Type": "Country",
+                "postalCode": "",
+                "geocodeQualityCode": "A5XAX",
+                "geocodeQuality": "CITY",
+                "dragPoint": false,
+                "sideOfStreet": "N",
+                "linkId": "0",
+                "unknownInput": "",
+                "type": "s",
+                "latLng": {
+                    "lat": 50.90999,
+                    "lng": -1.4071
+                },
+                "displayLatLng": {
+                    "lat": 50.90999,
+                    "lng": -1.4071
+                },
+                "mapUrl": ""
+            },
+            {
+                "street": "",
+                "adminArea6": "",
+                "adminArea6Type": "Neighborhood",
+                "adminArea5": "London",
+                "adminArea5Type": "City",
+                "adminArea4": "London",
+                "adminArea4Type": "County",
+                "adminArea3": "ENG",
+                "adminArea3Type": "State",
+                "adminArea1": "GB",
+                "adminArea1Type": "Country",
+                "postalCode": "",
+                "geocodeQualityCode": "A5XAX",
+                "geocodeQuality": "CITY",
+                "dragPoint": false,
+                "sideOfStreet": "N",
+                "linkId": "0",
+                "unknownInput": "",
+                "type": "s",
+                "latLng": {
+                    "lat": 51.50643,
+                    "lng": -0.12719
+                },
+                "displayLatLng": {
+                    "lat": 51.50643,
+                    "lng": -0.12719
+                },
+                "mapUrl": ""
+            }
+        ],
+        "locationSequence": [
+            0,
+            1
+        ]
+    },
+    "info": {
+        "statuscode": 0,
+        "copyright": {
+            "text": "\u00a9 2022 MapQuest, Inc.",
+            "imageUrl": "http://api.mqcdn.com/res/mqlogo.gif",
+            "imageAltText": "\u00a9 2022 MapQuest, Inc."
+        },
+        "messages": []
+    }
+}
