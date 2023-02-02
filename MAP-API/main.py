@@ -4,7 +4,8 @@ parses the data, and formats it for output to the user
 """
 
 from time import sleep
-import tui, process
+import tui
+import process
 
 main_api = "https://www.mapquestapi.com/directions/v2/route?"
 key = "2I7zK0gJWAdbdb1vlRAawWHYziJtCztn"
@@ -28,8 +29,8 @@ def run():
         elif option == 2:
             new_url = process.url(main_api, key, location, destination)
             data = process.retrieve_json(new_url)
-            print(data)
-            sleep(5)
+            show = tui.menu(8)
+            tui.display(data, show, location, destination,new_url)
         elif option == 3:
             choice = tui.menu(3)
             if choice == 1:
@@ -41,6 +42,7 @@ def run():
             elif choice == 4:
                 key = tui.menu(7)
         elif option == 4:
+            tui.exit()
             break
 
 
