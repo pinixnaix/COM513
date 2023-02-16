@@ -1,10 +1,18 @@
 {
     "route": {
+<<<<<<< HEAD
         "sessionId": "AI8A5gcAAFoBAAAFAAAAMAAAAKUAAAB42mNYysDAyMTAwMCekVqUapWcy3HvEisDFHB0C1rVM05TSDHnt6o3nayQwoAFwDSu1r8O1ugqHlvCMGWbVP37j2dT8oD0KyDNgAMcPyNmzMjIwKDApNbJ0MDAAxY8wMXSwMjQsOpDDxczCwMD1wIuBgYACTMhKLAgwzc:car",
         "realTime": 6216,
         "distance": 87.8718,
         "time": 5974,
         "formattedTime": "01:39:34",
+=======
+        "sessionId": "AJwA5gcAAFoBAAAFAAAAMAAAAKsAAAB42mNYzcDAyMTAwMCekVqUapWcG9c9iQPIZYgq_riMq-XGi_q5pQtSpl5_Ua8GpBmwAJjGraX3WEH8____1zMl3_hfV__QOOUkkN70wBirRhBYHuW8woiRgYEliEO5QyikIUBKgIGBi4NhSqMGUJZpgiKQbFBgMGBhUXD0EGEAAJbaKvUzO9nm:car",
+        "realTime": 6750,
+        "distance": 80.2364,
+        "time": 5813,
+        "formattedTime": "01:36:53",
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
         "hasHighway": true,
         "hasTollRoad": false,
         "hasBridge": true,
@@ -26,9 +34,15 @@
                 "hasFerry": false,
                 "hasCountryCross": false,
                 "hasTimedRestriction": false,
+<<<<<<< HEAD
                 "distance": 87.8718,
                 "time": 6216,
                 "formattedTime": "01:43:36",
+=======
+                "distance": 80.2364,
+                "time": 6750,
+                "formattedTime": "01:52:30",
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                 "origIndex": 0,
                 "origNarrative": "",
                 "destIndex": 0,
@@ -36,6 +50,7 @@
                 "maneuvers": [
                     {
                         "index": 0,
+<<<<<<< HEAD
                         "distance": 0.1243,
                         "narrative": "Head toward Fitzherbert Street on Commercial Road (A3). Go for 0.1 mi.",
                         "time": 22,
@@ -48,18 +63,46 @@
                         "startPoint": {
                             "lat": 50.80394,
                             "lng": -1.08732
+=======
+                        "distance": 0.2026,
+                        "narrative": "Head toward Great Scotland Yard on Whitehall (A3212). Go for 0.2 mi.",
+                        "time": 75,
+                        "direction": 4,
+                        "directionName": "South",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:01:15",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.50642,
+                            "lng": -0.12721
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         },
                         "turnType": 0,
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "A3",
                             "Commercial Road"
+=======
+                            "A3212",
+                            "Whitehall",
+                            "Whitehall House",
+                            "Old Admiralty Building",
+                            "Old War Office Building",
+                            "Army Headquarters",
+                            "Gwydyr House",
+                            "Royal United Services Institute",
+                            "Scottish Office",
+                            "The Banqueting House"
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         ]
                     },
                     {
                         "index": 1,
+<<<<<<< HEAD
                         "distance": 0.1703,
                         "narrative": "Take the 1st exit from Church Street Roundabout roundabout onto Mile End Road (A3) toward (M275)/(M27)/Cross Channel Ferries. Go for 0.2 mi.",
                         "time": 29,
@@ -72,19 +115,40 @@
                         "startPoint": {
                             "lat": 50.80559999999999,
                             "lng": -1.0873200000000003
+=======
+                        "distance": 0.1783,
+                        "narrative": "Continue on Parliament Street (A3212). Go for 0.2 mi.",
+                        "time": 65,
+                        "direction": 4,
+                        "directionName": "South",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:01:05",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.50357999999999,
+                            "lng": -0.12614999999999996
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         },
-                        "turnType": -1,
+                        "turnType": 0,
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "Church Street Roundabout",
                             "A3",
                             "Mile End Road"
+=======
+                            "A3212",
+                            "Parliament Street",
+                            "HM Treasury"
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         ]
                     },
                     {
                         "index": 2,
+<<<<<<< HEAD
                         "distance": 0.1417,
                         "narrative": "Keep right onto Mile End Road (A3). Go for 0.1 mi.",
                         "time": 22,
@@ -99,16 +163,39 @@
                             "lng": -1.08789
                         },
                         "turnType": 16,
+=======
+                        "distance": 0.0497,
+                        "narrative": "Continue on Parliament Square (A3212). Go for 262 ft.",
+                        "time": 23,
+                        "direction": 4,
+                        "directionName": "South",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:23",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.50102,
+                            "lng": -0.12610999999999997
+                        },
+                        "turnType": 0,
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "A3",
                             "Mile End Road"
+=======
+                            "A3212",
+                            "Parliament Square",
+                            "Houses of Parliament"
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         ]
                     },
                     {
                         "index": 3,
+<<<<<<< HEAD
                         "distance": 1.7305,
                         "narrative": "Keep right onto M275 toward (M275)/(M27). Go for 1.7 mi.",
                         "time": 120,
@@ -121,17 +208,38 @@
                         "startPoint": {
                             "lat": 50.80982999999999,
                             "lng": -1.0867300000000002
+=======
+                        "distance": 0.0373,
+                        "narrative": "Keep right onto Parliament Square. Go for 197 ft.",
+                        "time": 16,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:16",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.50030999999999,
+                            "lng": -0.12611999999999998
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         },
                         "turnType": 16,
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "M275"
+=======
+                            "Parliament Square",
+                            "Queen Annes Gate Buildings",
+                            "St Margarets Church"
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         ]
                     },
                     {
                         "index": 4,
+<<<<<<< HEAD
                         "distance": 0.3741,
                         "narrative": "Keep left onto M275 toward M27(West)/Southampton/Fareham. Go for 0.4 mi.",
                         "time": 25,
@@ -146,15 +254,37 @@
                             "lng": -1.0864200000000006
                         },
                         "turnType": 17,
+=======
+                        "distance": 0.0932,
+                        "narrative": "Turn left onto Broad Sanctuary (A302) toward Victoria Train Station. Go for 492 ft.",
+                        "time": 34,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:34",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.50026999999999,
+                            "lng": -0.12693999999999994
+                        },
+                        "turnType": 6,
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "M275"
+=======
+                            "A302",
+                            "Broad Sanctuary"
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         ]
                     },
                     {
                         "index": 5,
+<<<<<<< HEAD
                         "distance": 0.8631,
                         "narrative": "Take the exit toward Paulsgrove/Cosham onto A27. Go for 0.9 mi.",
                         "time": 76,
@@ -169,15 +299,37 @@
                             "lng": -1.085650000000001
                         },
                         "turnType": 15,
+=======
+                        "distance": 0.0447,
+                        "narrative": "Continue on The Sanctuary (A302). Go for 236 ft.",
+                        "time": 16,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:16",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.49975999999999,
+                            "lng": -0.12894
+                        },
+                        "turnType": 0,
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "A27"
+=======
+                            "A302",
+                            "The Sanctuary"
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         ]
                     },
                     {
                         "index": 6,
+<<<<<<< HEAD
                         "distance": 0.2392,
                         "narrative": "Make a U-Turn onto A27. Go for 0.2 mi.",
                         "time": 49,
@@ -190,40 +342,80 @@
                         "startPoint": {
                             "lat": 50.84565000000004,
                             "lng": -1.088610000000001
+=======
+                        "distance": 0.576,
+                        "narrative": "Continue on Victoria Street (A302). Go for 0.6 mi.",
+                        "time": 211,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:03:31",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.49940999999998,
+                            "lng": -0.12980999999999998
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         },
                         "turnType": 8,
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "A27"
+=======
+                            "A302",
+                            "Victoria Street"
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         ]
                     },
                     {
                         "index": 7,
+<<<<<<< HEAD
                         "distance": 17.3853,
                         "narrative": "Take right ramp onto M27 toward The WEST/Southampton/Fareham/Gosport. Go for 17.4 mi.",
                         "time": 1191,
+=======
+                        "distance": 0.1839,
+                        "narrative": "Keep right onto Victoria Street (A302) toward Ring Road(N)/(A4,A40)/West End. Go for 0.2 mi.",
+                        "time": 65,
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         "direction": 7,
                         "directionName": "West",
                         "signs": [],
                         "maneuverNotes": [],
+<<<<<<< HEAD
                         "formattedTime": "00:19:51",
                         "transportMode": "car",
                         "startPoint": {
                             "lat": 50.84389000000003,
                             "lng": -1.0906100000000007
+=======
+                        "formattedTime": "00:01:05",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.49654999999998,
+                            "lng": -0.14223000000000008
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         },
                         "turnType": 12,
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "M27"
+=======
+                            "A302",
+                            "Victoria Street",
+                            "Grosvenor Gardens"
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         ]
                     },
                     {
                         "index": 8,
+<<<<<<< HEAD
                         "distance": 10.1066,
                         "narrative": "Take exit 4 toward The MIDLANDS/London/Winchester onto M3. Go for 10.1 mi.",
                         "time": 753,
@@ -238,15 +430,37 @@
                             "lng": -1.3912099999999994
                         },
                         "turnType": 15,
+=======
+                        "distance": 0.0976,
+                        "narrative": "Keep left onto Grosvenor Gardens (B312). Go for 515 ft.",
+                        "time": 26,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:26",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.49722999999999,
+                            "lng": -0.1463000000000001
+                        },
+                        "turnType": 17,
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "M3"
+=======
+                            "B312",
+                            "Grosvenor Gardens"
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         ]
                     },
                     {
                         "index": 9,
+<<<<<<< HEAD
                         "distance": 0.2355,
                         "narrative": "Take exit 9 toward The Midlands/Newbury. Go for 0.2 mi.",
                         "time": 28,
@@ -271,27 +485,71 @@
                         "distance": 0.8973,
                         "narrative": "Take the 2nd exit from roundabout onto Winchester By-pass (A34) toward The Midlands/Newbury. Go for 0.9 mi.",
                         "time": 69,
+=======
+                        "distance": 0.1522,
+                        "narrative": "Turn left onto Hobart Place (A3217). Go for 0.2 mi.",
+                        "time": 54,
+                        "direction": 6,
+                        "directionName": "Southwest",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:54",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.49794999999999,
+                            "lng": -0.14826000000000011
+                        },
+                        "turnType": 6,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A3217",
+                            "Hobart Place",
+                            "Eaton Square"
+                        ]
+                    },
+                    {
+                        "index": 10,
+                        "distance": 0.174,
+                        "narrative": "Turn right onto Belgrave Place (B310). Go for 0.2 mi.",
+                        "time": 41,
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         "direction": 2,
                         "directionName": "Northwest",
                         "signs": [],
                         "maneuverNotes": [],
+<<<<<<< HEAD
                         "formattedTime": "00:01:09",
                         "transportMode": "car",
                         "startPoint": {
                             "lat": 51.070890000000006,
                             "lng": -1.2930400000000009
+=======
+                        "formattedTime": "00:00:41",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.49641999999999,
+                            "lng": -0.1508100000000001
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         },
-                        "turnType": -1,
+                        "turnType": 2,
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "A34",
                             "Winchester By-pass"
+=======
+                            "B310",
+                            "Belgrave Place"
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         ]
                     },
                     {
                         "index": 11,
+<<<<<<< HEAD
                         "distance": 27.8399,
                         "narrative": "Keep left onto A34 toward (A30)/(A303)/S. Scotney/Whitchurch/Stockbridge. Go for 27.8 mi.",
                         "time": 1571,
@@ -304,17 +562,38 @@
                         "startPoint": {
                             "lat": 51.08303999999998,
                             "lng": -1.29868
+=======
+                        "distance": 0.1131,
+                        "narrative": "Keep left onto Chesham Place (B319). Go for 0.1 mi.",
+                        "time": 34,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:34",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.49816,
+                            "lng": -0.15371000000000012
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         },
                         "turnType": 17,
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "A34"
+=======
+                            "B319",
+                            "Chesham Place",
+                            "German Embassy"
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         ]
                     },
                     {
                         "index": 12,
+<<<<<<< HEAD
                         "distance": 12.7139,
                         "narrative": "Keep right onto A34 toward The Midlands/Oxford. Go for 12.7 mi.",
                         "time": 719,
@@ -329,15 +608,37 @@
                             "lng": -1.316350000000003
                         },
                         "turnType": 16,
+=======
+                        "distance": 0.2995,
+                        "narrative": "Continue on Pont Street (B319). Go for 0.3 mi.",
+                        "time": 108,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:01:48",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.497519999999994,
+                            "lng": -0.15600000000000008
+                        },
+                        "turnType": 0,
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "A34"
+=======
+                            "B319",
+                            "Pont Street"
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         ]
                     },
                     {
                         "index": 13,
+<<<<<<< HEAD
                         "distance": 0.1783,
                         "narrative": "Take ramp onto Milton Interchange toward Didcot/Milton/Drayton/Steventon. Go for 0.2 mi.",
                         "time": 25,
@@ -352,15 +653,37 @@
                             "lng": -1.3000600000000022
                         },
                         "turnType": 13,
+=======
+                        "distance": 0.1758,
+                        "narrative": "Continue on Beauchamp Place (B319). Go for 0.2 mi.",
+                        "time": 68,
+                        "direction": 2,
+                        "directionName": "Northwest",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:01:08",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.4968,
+                            "lng": -0.16287000000000001
+                        },
+                        "turnType": 0,
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "Milton Interchange"
+=======
+                            "B319",
+                            "Beauchamp Place"
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         ]
                     },
                     {
                         "index": 14,
+<<<<<<< HEAD
                         "distance": 0.4722,
                         "narrative": "Keep left onto A4130 toward Wantage/Harwell/(A417)/Steventon/Drayton. Go for 0.5 mi.",
                         "time": 58,
@@ -375,15 +698,37 @@
                             "lng": -1.303620000000002
                         },
                         "turnType": 17,
+=======
+                        "distance": 0.1758,
+                        "narrative": "Turn left onto Brompton Road (A4). Go for 0.2 mi.",
+                        "time": 64,
+                        "direction": 6,
+                        "directionName": "Southwest",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:01:04",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.49826,
+                            "lng": -0.16621
+                        },
+                        "turnType": 6,
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "A4130"
+=======
+                            "A4",
+                            "Brompton Road"
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         ]
                     },
                     {
                         "index": 15,
+<<<<<<< HEAD
                         "distance": 0.1205,
                         "narrative": "Turn right onto Steventon Hill (B4017). Go for 0.1 mi.",
                         "time": 16,
@@ -398,16 +743,44 @@
                             "lng": -1.3140700000000018
                         },
                         "turnType": 2,
+=======
+                        "distance": 1.3018,
+                        "narrative": "Continue on Thurloe Place (A4) toward The WEST/Heathrow Airport/Hammersmith/Earls Court/South Kensington. Go for 1.3 mi.",
+                        "time": 389,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:06:29",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.496600000000015,
+                            "lng": -0.16929000000000005
+                        },
+                        "turnType": 0,
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "B4017",
                             "Steventon Hill"
+=======
+                            "A4",
+                            "Thurloe Place",
+                            "Cromwell Gardens",
+                            "Cromwell Road",
+                            "Derment House",
+                            "Fraser Place",
+                            "Savoy Court",
+                            "West Cromwell Road"
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         ]
                     },
                     {
                         "index": 16,
+<<<<<<< HEAD
                         "distance": 0.2809,
                         "narrative": "Continue on B4017. Go for 0.3 mi.",
                         "time": 32,
@@ -420,17 +793,39 @@
                         "startPoint": {
                             "lat": 51.61909000000007,
                             "lng": -1.3153900000000016
+=======
+                        "distance": 0.8575,
+                        "narrative": "Keep left onto West Cromwell Road (A4) toward The WEST/Heathrow Airport/Hammersmith. Go for 0.9 mi.",
+                        "time": 204,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:03:24",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.49330999999999,
+                            "lng": -0.1986000000000001
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         },
                         "turnType": 0,
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "B4017"
+=======
+                            "A4",
+                            "West Cromwell Road",
+                            "Talgarth Road",
+                            "Hammersmith Flyover"
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         ]
                     },
                     {
                         "index": 17,
+<<<<<<< HEAD
                         "distance": 0.1547,
                         "narrative": "Continue on High Street (B4017). Go for 0.2 mi.",
                         "time": 21,
@@ -445,16 +840,39 @@
                             "lng": -1.3189600000000012
                         },
                         "turnType": 0,
+=======
+                        "distance": 1.5907,
+                        "narrative": "Keep right onto Hammersmith Flyover (A4) toward The WEST/Heathrow Airport. Go for 1.6 mi.",
+                        "time": 244,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:04:04",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.49079000000001,
+                            "lng": -0.21738000000000005
+                        },
+                        "turnType": 16,
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "B4017",
                             "High Street"
+=======
+                            "A4",
+                            "Hammersmith Flyover",
+                            "Great West Road"
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         ]
                     },
                     {
                         "index": 18,
+<<<<<<< HEAD
                         "distance": 0.6077,
                         "narrative": "Continue on Abingdon Road (B4017). Go for 0.6 mi.",
                         "time": 71,
@@ -469,16 +887,43 @@
                             "lng": -1.3201000000000012
                         },
                         "turnType": 0,
+=======
+                        "distance": 1.1576,
+                        "narrative": "Take the 3rd exit from Hogarth Roundabout roundabout onto Great West Road (A4) toward The WEST/Heathrow Airport/(M4). Go for 1.2 mi.",
+                        "time": 173,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:02:53",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.48682999999999,
+                            "lng": -0.2519599999999999
+                        },
+                        "turnType": -1,
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "B4017",
                             "Abingdon Road"
+=======
+                            "Hogarth Roundabout",
+                            "A4",
+                            "Great West Road",
+                            "Hogarth Lane",
+                            "Hogarth Terrace",
+                            "Ellesmere Road",
+                            "Cedars Road"
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         ]
                     },
                     {
                         "index": 19,
+<<<<<<< HEAD
                         "distance": 0.7823,
                         "narrative": "Continue on Steventon Road (B4017). Go for 0.8 mi.",
                         "time": 100,
@@ -491,19 +936,38 @@
                         "startPoint": {
                             "lat": 51.633100000000084,
                             "lng": -1.317200000000001
+=======
+                        "distance": 8.9496,
+                        "narrative": "Keep right onto M4 toward The WEST/Heathrow Airport/Staines/Hounslow. Go for 8.9 mi.",
+                        "time": 718,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:11:58",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.48956999999999,
+                            "lng": -0.2779699999999998
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         },
-                        "turnType": 0,
+                        "turnType": 16,
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "B4017",
                             "Steventon Road",
                             "Mott Cottages"
+=======
+                            "M4"
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         ]
                     },
                     {
                         "index": 20,
+<<<<<<< HEAD
                         "distance": 0.1597,
                         "narrative": "Take the 1st exit from roundabout onto B4017. Go for 0.2 mi.",
                         "time": 27,
@@ -518,15 +982,36 @@
                             "lng": -1.3128700000000004
                         },
                         "turnType": -1,
+=======
+                        "distance": 7.2781,
+                        "narrative": "Take exit 4B toward Heathrow Airport (Terminal 5)/Gatwick Airport onto M25. Go for 7.3 mi.",
+                        "time": 641,
+                        "direction": 6,
+                        "directionName": "Southwest",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:10:41",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.49435999999995,
+                            "lng": -0.4764699999999994
+                        },
+                        "turnType": 15,
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "B4017"
+=======
+                            "M25"
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         ]
                     },
                     {
                         "index": 21,
+<<<<<<< HEAD
                         "distance": 0.402,
                         "narrative": "Continue on Abingdon Road (B4017). Go for 0.4 mi.",
                         "time": 53,
@@ -539,18 +1024,37 @@
                         "startPoint": {
                             "lat": 51.646110000000085,
                             "lng": -1.3122500000000004
+=======
+                        "distance": 51.2724,
+                        "narrative": "Take exit 12 toward Southampton onto M3. Go for 51.3 mi.",
+                        "time": 2840,
+                        "direction": 6,
+                        "directionName": "Southwest",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:47:20",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.40552999999988,
+                            "lng": -0.5396200000000004
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         },
-                        "turnType": 0,
+                        "turnType": 15,
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "B4017",
                             "Abingdon Road"
+=======
+                            "M3"
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         ]
                     },
                     {
                         "index": 22,
+<<<<<<< HEAD
                         "distance": 1.0445,
                         "narrative": "Continue on Drayton Road (B4017). Go for 1.0 mi.",
                         "time": 120,
@@ -563,18 +1067,37 @@
                         "startPoint": {
                             "lat": 51.65127000000008,
                             "lng": -1.3081200000000006
+=======
+                        "distance": 1.0756,
+                        "narrative": "Keep right onto M3 toward Southampton/Airport/Portsmouth/M27 East. Go for 1.1 mi.",
+                        "time": 63,
+                        "direction": 6,
+                        "directionName": "Southwest",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:01:03",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.973049999999674,
+                            "lng": -1.375090000000002
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         },
-                        "turnType": 0,
+                        "turnType": 16,
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "B4017",
                             "Drayton Road"
+=======
+                            "M3"
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         ]
                     },
                     {
                         "index": 23,
+<<<<<<< HEAD
                         "distance": 0.3405,
                         "narrative": "Pass 2 roundabouts and continue on Drayton Road (B4017). Go for 0.3 mi.",
                         "time": 67,
@@ -613,12 +1136,29 @@
                             "lng": -1.2950600000000012
                         },
                         "turnType": -1,
+=======
+                        "distance": 0.0385,
+                        "narrative": "Keep left toward Southampton/A33. Go for 203 ft.",
+                        "time": 3,
+                        "direction": 6,
+                        "directionName": "Southwest",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:03",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.96124999999967,
+                            "lng": -1.3907700000000018
+                        },
+                        "turnType": 17,
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": []
                     },
                     {
+<<<<<<< HEAD
                         "index": 25,
                         "distance": 0.1926,
                         "narrative": "Take the 1st exit from roundabout onto Marcham Road (A415). Go for 0.2 mi.",
@@ -752,12 +1292,74 @@
                         "startPoint": {
                             "lat": 51.755670000000045,
                             "lng": -1.2971700000000024
+=======
+                        "index": 24,
+                        "distance": 0.768,
+                        "narrative": "Continue on M3. Go for 0.8 mi.",
+                        "time": 54,
+                        "direction": 6,
+                        "directionName": "Southwest",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:54",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.96085999999967,
+                            "lng": -1.3913900000000017
+                        },
+                        "turnType": 0,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "M3"
+                        ]
+                    },
+                    {
+                        "index": 25,
+                        "distance": 0.0721,
+                        "narrative": "Continue on A27 toward Southampton. Go for 381 ft.",
+                        "time": 10,
+                        "direction": 4,
+                        "directionName": "South",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:10",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.95331999999967,
+                            "lng": -1.4033800000000018
+                        },
+                        "turnType": 0,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A27"
+                        ]
+                    },
+                    {
+                        "index": 26,
+                        "distance": 0.8134,
+                        "narrative": "Take the 2nd exit from Chilworth Roundabout roundabout onto Bassett Avenue (A33) toward Southampton. Go for 0.8 mi.",
+                        "time": 107,
+                        "direction": 4,
+                        "directionName": "South",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:01:47",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.95230999999967,
+                            "lng": -1.4037500000000018
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         },
                         "turnType": -1,
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "Botley Interchange",
                             "A420"
                         ]
@@ -801,12 +1403,34 @@
                         "startPoint": {
                             "lat": 51.75277000000004,
                             "lng": -1.2690800000000029
+=======
+                            "Chilworth Roundabout",
+                            "A33",
+                            "Bassett Avenue"
+                        ]
+                    },
+                    {
+                        "index": 27,
+                        "distance": 1.8473,
+                        "narrative": "Take the 1st exit from roundabout onto Bassett Avenue (A33) toward City Centre. Go for 1.8 mi.",
+                        "time": 271,
+                        "direction": 4,
+                        "directionName": "South",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:04:31",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.940769999999674,
+                            "lng": -1.4068900000000015
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         },
                         "turnType": -1,
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "A420",
                             "Park End Street",
                             "Frideswide Square"
@@ -828,10 +1452,34 @@
                             "lng": -1.2677400000000025
                         },
                         "turnType": -1,
+=======
+                            "A33",
+                            "Bassett Avenue",
+                            "The Avenue"
+                        ]
+                    },
+                    {
+                        "index": 28,
+                        "distance": 0.2523,
+                        "narrative": "Keep left onto Dorset Street (A33) toward City Centre/West Quay. Go for 0.3 mi.",
+                        "time": 51,
+                        "direction": 4,
+                        "directionName": "South",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:51",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.914529999999694,
+                            "lng": -1.4012600000000013
+                        },
+                        "turnType": 17,
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "A4144",
                             "Hythe Bridge Street",
                             "Worcester Street",
@@ -854,10 +1502,33 @@
                             "lng": -1.2592400000000026
                         },
                         "turnType": 6,
+=======
+                            "A33",
+                            "Dorset Street"
+                        ]
+                    },
+                    {
+                        "index": 29,
+                        "distance": 0.4076,
+                        "narrative": "Take the 4th exit from Charlotte Place roundabout onto Brunswick Place (A3024) toward Ring Road(West). Go for 0.4 mi.",
+                        "time": 82,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:01:22",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.9110699999997,
+                            "lng": -1.4009900000000013
+                        },
+                        "turnType": -1,
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         "mapUrl": "",
                         "attributes": 0,
                         "iconUrl": "",
                         "streets": [
+<<<<<<< HEAD
                             "A4144",
                             "St Giles"
                         ]
@@ -866,6 +1537,18 @@
                         "index": 35,
                         "distance": 0,
                         "narrative": "Arrive at St Giles (A4144).",
+=======
+                            "Charlotte Place",
+                            "A3024",
+                            "Brunswick Place",
+                            "Cumberland Place"
+                        ]
+                    },
+                    {
+                        "index": 30,
+                        "distance": 0,
+                        "narrative": "Arrive at Cumberland Place (A3024). Your destination is on the right.",
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         "time": 0,
                         "direction": 0,
                         "directionName": "None",
@@ -874,8 +1557,13 @@
                         "formattedTime": "00:00:00",
                         "transportMode": "car",
                         "startPoint": {
+<<<<<<< HEAD
                             "lat": 51.75629000000007,
                             "lng": -1.2595130000000023
+=======
+                            "lat": 50.9099729999997,
+                            "lng": -1.4070910000000014
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                         },
                         "turnType": 0,
                         "mapUrl": "",
@@ -905,12 +1593,21 @@
         },
         "boundingBox": {
             "ul": {
+<<<<<<< HEAD
                 "lat": 51.75654000000005,
                 "lng": -1.4003699999999994
             },
             "lr": {
                 "lat": 50.80394,
                 "lng": -1.0849300000000008
+=======
+                "lat": 51.50642,
+                "lng": -1.4070910000000014
+            },
+            "lr": {
+                "lat": 50.9099729999997,
+                "lng": -0.12602999999999995
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
             }
         },
         "maxRoutes": "",
@@ -919,9 +1616,13 @@
                 "street": "",
                 "adminArea6": "",
                 "adminArea6Type": "Neighborhood",
+<<<<<<< HEAD
                 "adminArea5": "Portsmouth",
+=======
+                "adminArea5": "London",
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                 "adminArea5Type": "City",
-                "adminArea4": "Hampshire",
+                "adminArea4": "London",
                 "adminArea4Type": "County",
                 "adminArea3": "ENG",
                 "adminArea3Type": "State",
@@ -936,12 +1637,21 @@
                 "unknownInput": "",
                 "type": "s",
                 "latLng": {
+<<<<<<< HEAD
                     "lat": 50.804,
                     "lng": -1.08727
                 },
                 "displayLatLng": {
                     "lat": 50.804,
                     "lng": -1.08727
+=======
+                    "lat": 51.50643,
+                    "lng": -0.12719
+                },
+                "displayLatLng": {
+                    "lat": 51.50643,
+                    "lng": -0.12719
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                 },
                 "mapUrl": ""
             },
@@ -949,9 +1659,15 @@
                 "street": "",
                 "adminArea6": "",
                 "adminArea6Type": "Neighborhood",
+<<<<<<< HEAD
                 "adminArea5": "Oxford",
                 "adminArea5Type": "City",
                 "adminArea4": "Oxfordshire",
+=======
+                "adminArea5": "Southampton",
+                "adminArea5Type": "City",
+                "adminArea4": "Hampshire",
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                 "adminArea4Type": "County",
                 "adminArea3": "ENG",
                 "adminArea3Type": "State",
@@ -966,12 +1682,21 @@
                 "unknownInput": "",
                 "type": "s",
                 "latLng": {
+<<<<<<< HEAD
                     "lat": 51.75629,
                     "lng": -1.25951
                 },
                 "displayLatLng": {
                     "lat": 51.75629,
                     "lng": -1.25951
+=======
+                    "lat": 50.90999,
+                    "lng": -1.4071
+                },
+                "displayLatLng": {
+                    "lat": 50.90999,
+                    "lng": -1.4071
+>>>>>>> 25cc0107d8907371e05feee3ec3b0ba06fef2c00
                 },
                 "mapUrl": ""
             }
