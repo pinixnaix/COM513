@@ -10,17 +10,17 @@ def welcome():
     os.system("clear")
     print("="*75+"\n\n\n")
     print("\t\t\t\tWELCOME\n\n\n")
-    print("\tThis application will retrieve JSON data from the MapQuest API")
+    print("     This application will retrieve JSON data from the MapQuest API")
     print("="*75)
     sleep(3)
 
 
-def exit():
+def bye():
     """Function to display a exit message"""
     os.system("clear")
     print("="*75+"\n\n\n")
     print("\t\t\t\tExit\n\n\n")
-    print("\t\t\tThank you for using this API")
+    print("\t\t    Thank you for using this API")
     print("="*75)
     sleep(3)
 
@@ -31,7 +31,7 @@ def menu(variant):
     if variant is None or variant == 0:
         os.system("clear")
         choices = [1, 2, 3, 4]
-        print("="*75+"\n\n")
+        print("="*75+"\n")
         print("\t\t\t\tMain Menu\n\n")
 
         print("[1] Enter the Directions")
@@ -47,7 +47,7 @@ def menu(variant):
 
     elif variant == 1:
         os.system("clear")
-        print("="*75+"\n\n")
+        print("="*75+"\n")
         print("\t\tEnter the Directions\n")
         location = str(input("\nEnter the starting location: "))
         destination = str(input("\nEnter the destination: "))
@@ -58,7 +58,7 @@ def menu(variant):
 
         os.system("clear")
         choices = [1, 2, 3, 4]
-        print("="*75+"\n\n")
+        print("="*75+"\n")
         print("\t\tChange the options for the navigation\n")
         print("[1] Change starting location")
         print("[2] Change destination")
@@ -95,21 +95,39 @@ def menu(variant):
             return option
         else:
             print("Wrong Option!!!!!")
-            return None 
+            return None
 
-def display(data, option, loc, dest, url):
+
+def display_status(status, url):
     """ Function to display the data"""
     os.system("clear")
-    print("="*75+"\n\n")
+    print("="*75+"\n")
     print("URL: "+url)
-    print("\nStarting Location: "+loc)
-    print("Destination: "+dest)
+    print(f"\nAPI Status: {status} = A sucessful route call.\n")
 
-    if option == 1:
-        print("in MPG")
+
+
+def display(data, route, option, loc, dest):
+    """ Function to display the data"""
+
+    print("="*75)
+    print(f"\nDirections from {loc} to {dest}.")
+    print(f"Trip duraction:       {route[0]}")
+ 
+    if option == 2:
+        print(f"Kilometers:           {(route[1]*1.61):.2f}\n")
     else:
-        print("in KM")
+        print(f"Miles:                {(route[1]):.2f}\n")
+
+    print("="*75+"\n")
+
+    sleep(2)
+
+    for leg in data["route"]["legs"][0]["maneuvers"]:
+        print(leg["narrative"])
+
+    print("\n"+"="*75)
     try:
-        input("Press enter to continue ")
+        input("\nPress enter to continue ")
     except SyntaxError:
         pass

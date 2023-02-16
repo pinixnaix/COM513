@@ -3,7 +3,6 @@ Application that retrieves JSON data from the MapQuest Directions API,
 parses the data, and formats it for output to the user
 """
 
-from time import sleep
 import tui
 import process
 
@@ -29,8 +28,15 @@ def run():
         elif option == 2:
             new_url = process.url(main_api, key, location, destination)
             data = process.retrieve_json(new_url)
+            status = data["info"]["statuscode"]
             show = tui.menu(8)
-            tui.display(data, show, location, destination,new_url)
+            tui.display_status(status, new_url)
+            route = []
+            route.append(data["route"]["formattedTime"])
+            route.append(data["route"]["distance"])
+
+            tui.display(data, route, show, location, destination)
+
         elif option == 3:
             choice = tui.menu(3)
             if choice == 1:
@@ -42,7 +48,7 @@ def run():
             elif choice == 4:
                 key = tui.menu(7)
         elif option == 4:
-            tui.exit()
+            tui.bye()
             break
 
 
