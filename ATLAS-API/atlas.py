@@ -40,10 +40,7 @@ def display_results(msmid, results):
             print("Destination Address: ",data.destination_address)
             print("Packets sent: ",data.packets_sent)
             print("Median Round Trip: ",data.rtt_median)
-            print("Average Round Trip: ",data.rtt_average)
-        
-        
-        
+            print("Average Round Trip: ",data.rtt_average)  
 
     elif measurement.type == 'traceroute':
         for result in results:
@@ -53,13 +50,13 @@ def display_results(msmid, results):
             print("Destination Address: ",data.destination_address)
             print("Total hops: ",data.total_hops)
             print("Median Round Trip: ",data.hops)
-        
+
 
 def run():
 
     msmid = get_id()
     results = get_results(msmid)
     display_results(msmid, results)
-        
+
 if __name__ == "__main__":
     run()
