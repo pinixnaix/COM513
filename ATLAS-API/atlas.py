@@ -47,12 +47,12 @@ def display_results(msmid, results):
 
     elif measurement.type == 'traceroute':
         for result in results:
-            data = PingResult(result)
+            data = TracerouteResult(result)
             print("\nAddress Family: ",data.af)
             print("Source Address: ",data.origin)
             print("Destination Address: ",data.destination_address)
-            print("Total hops: ")
-            print("Median Round Trip: ",data.rtt_median)
+            print("Total hops: ",data.total_hops)
+            print("Median Round Trip: ",data.hops)
         
 
 def run():
