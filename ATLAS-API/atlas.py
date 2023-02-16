@@ -9,6 +9,7 @@ from ripe.atlas.cousteau import Measurement
 from ripe.atlas.sagan import PingResult
 from ripe.atlas.sagan import TracerouteResult
 
+
 def get_id():
     """"Function that accepts a measurement ID value from the user """
     msmid = input("Insert a measurement id: ")
@@ -17,12 +18,10 @@ def get_id():
 def get_results(msmid):
     """"Function that requests the results from the RIPE atlas database """
     kwargs = {"msm_id":msmid}
-    results = {}
     sucess, results = AtlasLatestRequest(**kwargs).create()
     if sucess:
         with open ("RIPEmeasurements.txt", "w", encoding="utf-8") as file:
             json.dump(results, file, ensure_ascii=False, indent=4)
-            
         return results
     else:
         print("\nMeasurement ID not valid!\n")
@@ -34,23 +33,26 @@ def display_results(msmid, results):
     measurement = Measurement(id= msmid)
     print("\nMeasurement type: ",measurement.type)
     if measurement.type == 'ping':
-        print(type(results))
-        ping_result = PingResult("RIPEmeasurements.txt")
-        print(ping_result)
-       # print("\nAddress Family: IPV",ping_result.af)
-        #print("Source Address: ",ping_result.origin)
-        #print("Destination Address: ",measurement.target_ip)
-        #print("Packets sent: ",ping_result.packets_sent)
-        #print("Median Round Trip: ",ping_result.rtt_median)
-        #print("Average Round Trip: ",ping_result.rtt_average)
+        for result in results:
+            data = PingResult(result)
+            print("\nAddress Family: IPV",data.af)
+            print("Source Address: ",data.origin)
+            print("Destination Address: ",data.destination_address)
+            print("Packets sent: ",data.packets_sent)
+            print("Median Round Trip: ",data.rtt_median)
+            print("Average Round Trip: ",data.rtt_average)
+        
+        
         
 
     elif measurement.type == 'traceroute':
-        print("\nAddress Family: ")
-        print("Source Address: ")
-        print("Destination Address: ",measurement.target_ip)
-        print("Total hops: ")
-        print("Median Round Trip: ")
+        for result in results:
+            data = PingResult(result)
+            print("\nAddress Family: ",data.af)
+            print("Source Address: ",data.origin)
+            print("Destination Address: ",data.destination_address)
+            print("Total hops: ")
+            print("Median Round Trip: ",data.rtt_median)
         
 
 def run():
