@@ -45,8 +45,11 @@ def run():
     for costumer in range(3):
         print("=" * 75)
         print(f"\t\t\t\t\t\t     Costumer {costumer+1}\n")
-        results = []
-        msm_id, msm_type = get_measurements()
+        msm_type = ""
+
+        while True and msm_type != 'ping' or msm_type != 'traceroute':
+            results = []
+            msm_id, msm_type = get_measurements()
         if msm_type == 'ping':
             results.append(get_ping_results(msm_id))
             while True and len(results) < 3:
