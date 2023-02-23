@@ -1,0 +1,776 @@
+{
+    "route": {
+        "sessionId": "AJUA5wcAACoAAAAAAAAADAAAAKcAAAB42mNYzsDAyMTAwMCekVqUapWcG9c9iQPIZYgq_riMo-XGi_q5pQtSpl5_Ua8GpBmwAJjGraX3WEH8____1zMl3_hfV__QOOUkkN70wBirRhDoje0LE2FkYLATUWpU4AIKiAgwaDAHAhkcDm0gBU0MBwQEGlgUAxkAv8UpmCBHYTM:car",
+        "realTime": 6810,
+        "distance": 79.8456,
+        "time": 5707,
+        "formattedTime": "01:35:07",
+        "hasHighway": true,
+        "hasTollRoad": true,
+        "hasBridge": true,
+        "hasSeasonalClosure": false,
+        "hasTunnel": false,
+        "hasFerry": false,
+        "hasUnpaved": false,
+        "hasTimedRestriction": false,
+        "hasCountryCross": false,
+        "legs": [
+            {
+                "index": 0,
+                "hasTollRoad": true,
+                "hasHighway": true,
+                "hasBridge": true,
+                "hasUnpaved": false,
+                "hasTunnel": false,
+                "hasSeasonalClosure": false,
+                "hasFerry": false,
+                "hasCountryCross": false,
+                "hasTimedRestriction": false,
+                "distance": 79.8456,
+                "time": 6810,
+                "formattedTime": "01:53:30",
+                "origIndex": 0,
+                "origNarrative": "",
+                "destIndex": 0,
+                "destNarrative": "",
+                "maneuvers": [
+                    {
+                        "index": 0,
+                        "distance": 0.0391,
+                        "narrative": "Head toward Craigs Court on Whitehall (A3212). Go for 207 ft.",
+                        "time": 24,
+                        "direction": 2,
+                        "directionName": "Northwest",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:24",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.50642,
+                            "lng": -0.12721
+                        },
+                        "turnType": 0,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A3212",
+                            "Whitehall",
+                            "Whitehall House"
+                        ]
+                    },
+                    {
+                        "index": 1,
+                        "distance": 0.0249,
+                        "narrative": "Turn left onto Charing Cross. Go for 131 ft.",
+                        "time": 23,
+                        "direction": 2,
+                        "directionName": "Northwest",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:23",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.50696,
+                            "lng": -0.12745
+                        },
+                        "turnType": 6,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A3212",
+                            "Whitehall",
+                            "Charing Cross"
+                        ]
+                    },
+                    {
+                        "index": 2,
+                        "distance": 0.6381,
+                        "narrative": "Turn left onto The Mall. Go for 0.6 mi.",
+                        "time": 228,
+                        "direction": 6,
+                        "directionName": "Southwest",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:03:48",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.5072,
+                            "lng": -0.12780999999999998
+                        },
+                        "turnType": 6,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "The Mall"
+                        ]
+                    },
+                    {
+                        "index": 3,
+                        "distance": 0.036,
+                        "narrative": "Turn right toward Constitution Hill. Go for 190 ft.",
+                        "time": 28,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:28",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.502069999999996,
+                            "lng": -0.14016000000000003
+                        },
+                        "turnType": 2,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": []
+                    },
+                    {
+                        "index": 4,
+                        "distance": 0.3939,
+                        "narrative": "Continue on Constitution Hill. Go for 0.4 mi.",
+                        "time": 126,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:02:06",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.50214999999999,
+                            "lng": -0.14092000000000005
+                        },
+                        "turnType": 0,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "Constitution Hill"
+                        ]
+                    },
+                    {
+                        "index": 5,
+                        "distance": 0.0609,
+                        "narrative": "Turn left onto Duke of Wellington Place. Go for 322 ft.",
+                        "time": 19,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:19",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.50249999999999,
+                            "lng": -0.15006000000000008
+                        },
+                        "turnType": 6,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "Duke of Wellington Place"
+                        ]
+                    },
+                    {
+                        "index": 6,
+                        "distance": 0.023,
+                        "narrative": "Keep right toward Duke of Wellington Place. Go for 121 ft.",
+                        "time": 13,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:13",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.50201999999998,
+                            "lng": -0.15122000000000005
+                        },
+                        "turnType": 16,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "Duke of Wellington Place"
+                        ]
+                    },
+                    {
+                        "index": 7,
+                        "distance": 0.0516,
+                        "narrative": "Continue on Grosvenor Place. Go for 272 ft.",
+                        "time": 21,
+                        "direction": 2,
+                        "directionName": "Northwest",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:21",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.50201999999998,
+                            "lng": -0.15172000000000005
+                        },
+                        "turnType": 0,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "Grosvenor Place"
+                        ]
+                    },
+                    {
+                        "index": 8,
+                        "distance": 0.379,
+                        "narrative": "Keep left onto Knightsbridge toward Kensington/A4. Go for 0.4 mi.",
+                        "time": 126,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:02:06",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.50267999999998,
+                            "lng": -0.15226000000000006
+                        },
+                        "turnType": 17,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "Knightsbridge",
+                            "A4",
+                            "The Parkside"
+                        ]
+                    },
+                    {
+                        "index": 9,
+                        "distance": 0.5164,
+                        "narrative": "Keep left onto Brompton Road (A4) toward The WEST/Heathrow Airport/Hammersmith/Earls Court/South Kensington. Go for 0.5 mi.",
+                        "time": 238,
+                        "direction": 6,
+                        "directionName": "Southwest",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:03:58",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.50173999999999,
+                            "lng": -0.16064000000000012
+                        },
+                        "turnType": 17,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A4",
+                            "Brompton Road",
+                            "Silver City House"
+                        ]
+                    },
+                    {
+                        "index": 10,
+                        "distance": 1.3018,
+                        "narrative": "Continue on Thurloe Place (A4) toward The WEST/Heathrow Airport/Hammersmith/Earls Court/South Kensington. Go for 1.3 mi.",
+                        "time": 433,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:07:13",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.496599999999994,
+                            "lng": -0.16929000000000016
+                        },
+                        "turnType": 0,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A4",
+                            "Thurloe Place",
+                            "Cromwell Gardens",
+                            "Cromwell Road",
+                            "University Catholic Chaplaincy",
+                            "Derment House",
+                            "Fraser Place",
+                            "Derby House",
+                            "Savoy Court",
+                            "Sherborne House",
+                            "Cromwell Mansions",
+                            "West Cromwell Road"
+                        ]
+                    },
+                    {
+                        "index": 11,
+                        "distance": 0.8575,
+                        "narrative": "Keep left onto West Cromwell Road (A4) toward The WEST/Heathrow Airport/Hammersmith. Go for 0.9 mi.",
+                        "time": 174,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:02:54",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.493309999999965,
+                            "lng": -0.19860000000000022
+                        },
+                        "turnType": 17,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A4",
+                            "West Cromwell Road",
+                            "Talgarth Road",
+                            "Talgarth Mansions",
+                            "Hammersmith Flyover"
+                        ]
+                    },
+                    {
+                        "index": 12,
+                        "distance": 1.5907,
+                        "narrative": "Keep right onto Hammersmith Flyover (A4) toward The WEST/Heathrow Airport. Go for 1.6 mi.",
+                        "time": 353,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:05:53",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.49078999999999,
+                            "lng": -0.21738000000000016
+                        },
+                        "turnType": 16,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A4",
+                            "Hammersmith Flyover",
+                            "Great West Road",
+                            "Bazalgette Court"
+                        ]
+                    },
+                    {
+                        "index": 13,
+                        "distance": 1.1576,
+                        "narrative": "Take the 3rd exit from Hogarth Roundabout roundabout onto Great West Road (A4) toward The WEST/Heathrow Airport/(M4). Go for 1.2 mi.",
+                        "time": 160,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:02:40",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.48682999999997,
+                            "lng": -0.25196
+                        },
+                        "turnType": -1,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "Hogarth Roundabout",
+                            "A4",
+                            "Great West Road",
+                            "Hogarth Lane",
+                            "Hogarth Terrace",
+                            "Ellesmere Road",
+                            "Cedars Road"
+                        ]
+                    },
+                    {
+                        "index": 14,
+                        "distance": 8.9496,
+                        "narrative": "Keep right onto M4 toward The WEST/Heathrow Airport/Staines/Hounslow. Go for 8.9 mi.",
+                        "time": 712,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:11:52",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.48956999999997,
+                            "lng": -0.2779699999999999
+                        },
+                        "turnType": 16,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "M4"
+                        ]
+                    },
+                    {
+                        "index": 15,
+                        "distance": 7.2781,
+                        "narrative": "Take exit 4B toward Heathrow Airport (Terminal 5)/Gatwick Airport onto M25. Go for 7.3 mi.",
+                        "time": 463,
+                        "direction": 6,
+                        "directionName": "Southwest",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:07:43",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.49435999999993,
+                            "lng": -0.4764699999999995
+                        },
+                        "turnType": 15,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "M25"
+                        ]
+                    },
+                    {
+                        "index": 16,
+                        "distance": 51.2724,
+                        "narrative": "Take exit 12 toward Southampton onto M3. Go for 51.3 mi.",
+                        "time": 2947,
+                        "direction": 6,
+                        "directionName": "Southwest",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:49:07",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 51.40552999999986,
+                            "lng": -0.5396200000000005
+                        },
+                        "turnType": 15,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "M3"
+                        ]
+                    },
+                    {
+                        "index": 17,
+                        "distance": 1.0756,
+                        "narrative": "Keep right onto M3 toward Southampton/Airport/Portsmouth/M27 East. Go for 1.1 mi.",
+                        "time": 64,
+                        "direction": 6,
+                        "directionName": "Southwest",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:01:04",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.97304999999965,
+                            "lng": -1.375090000000002
+                        },
+                        "turnType": 16,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "M3"
+                        ]
+                    },
+                    {
+                        "index": 18,
+                        "distance": 0.0385,
+                        "narrative": "Keep left toward Southampton/A33. Go for 203 ft.",
+                        "time": 3,
+                        "direction": 6,
+                        "directionName": "Southwest",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:03",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.96124999999965,
+                            "lng": -1.3907700000000018
+                        },
+                        "turnType": 17,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": []
+                    },
+                    {
+                        "index": 19,
+                        "distance": 0.768,
+                        "narrative": "Continue on M3. Go for 0.8 mi.",
+                        "time": 55,
+                        "direction": 6,
+                        "directionName": "Southwest",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:55",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.96085999999965,
+                            "lng": -1.3913900000000017
+                        },
+                        "turnType": 0,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "M3"
+                        ]
+                    },
+                    {
+                        "index": 20,
+                        "distance": 0.0721,
+                        "narrative": "Continue on A27 toward Southampton. Go for 381 ft.",
+                        "time": 13,
+                        "direction": 4,
+                        "directionName": "South",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:13",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.95331999999965,
+                            "lng": -1.4033800000000018
+                        },
+                        "turnType": 0,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A27"
+                        ]
+                    },
+                    {
+                        "index": 21,
+                        "distance": 0.8134,
+                        "narrative": "Take the 2nd exit from Chilworth Roundabout roundabout onto Bassett Avenue (A33) toward Southampton. Go for 0.8 mi.",
+                        "time": 123,
+                        "direction": 4,
+                        "directionName": "South",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:02:03",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.95230999999965,
+                            "lng": -1.4037500000000018
+                        },
+                        "turnType": -1,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "Chilworth Roundabout",
+                            "A33",
+                            "Bassett Avenue"
+                        ]
+                    },
+                    {
+                        "index": 22,
+                        "distance": 1.8473,
+                        "narrative": "Take the 1st exit from roundabout onto Bassett Avenue (A33) toward R.S.H Hospital. Go for 1.8 mi.",
+                        "time": 313,
+                        "direction": 4,
+                        "directionName": "South",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:05:13",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.94076999999965,
+                            "lng": -1.4068900000000018
+                        },
+                        "turnType": -1,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A33",
+                            "Bassett Avenue",
+                            "The Avenue"
+                        ]
+                    },
+                    {
+                        "index": 23,
+                        "distance": 0.2523,
+                        "narrative": "Keep left onto Dorset Street (A33) toward City Centre/West Quay. Go for 0.3 mi.",
+                        "time": 55,
+                        "direction": 4,
+                        "directionName": "South",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:55",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.91452999999967,
+                            "lng": -1.4012600000000015
+                        },
+                        "turnType": 17,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "A33",
+                            "Dorset Street"
+                        ]
+                    },
+                    {
+                        "index": 24,
+                        "distance": 0.4076,
+                        "narrative": "Take the 4th exit from Charlotte Place roundabout onto Brunswick Place (A3024) toward Ring road(west). Go for 0.4 mi.",
+                        "time": 96,
+                        "direction": 7,
+                        "directionName": "West",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:01:36",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.911069999999675,
+                            "lng": -1.4009900000000015
+                        },
+                        "turnType": -1,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": [
+                            "Charlotte Place",
+                            "A3024",
+                            "Brunswick Place",
+                            "Cumberland Place"
+                        ]
+                    },
+                    {
+                        "index": 25,
+                        "distance": 0,
+                        "narrative": "Arrive at Cumberland Place (A3024). Your destination is on the right.",
+                        "time": 0,
+                        "direction": 0,
+                        "directionName": "None",
+                        "signs": [],
+                        "maneuverNotes": [],
+                        "formattedTime": "00:00:00",
+                        "transportMode": "car",
+                        "startPoint": {
+                            "lat": 50.90997299999968,
+                            "lng": -1.4070910000000016
+                        },
+                        "turnType": 0,
+                        "mapUrl": "",
+                        "attributes": 0,
+                        "iconUrl": "",
+                        "streets": []
+                    }
+                ]
+            }
+        ],
+        "options": {
+            "routeType": "FASTEST",
+            "narrativeType": "text",
+            "enhancedNarrative": false,
+            "walkingSpeed": -1,
+            "highwayEfficiency": 22,
+            "avoids": false,
+            "generalize": -1,
+            "shapeFormat": "raw",
+            "unit": "M",
+            "locale": "en_US",
+            "useTraffic": false,
+            "timeType": 0,
+            "dateType": 0,
+            "doReverseGeocode": true,
+            "sideOfStreetDisplay": true
+        },
+        "boundingBox": {
+            "ul": {
+                "lat": 51.5072,
+                "lng": -1.4070910000000016
+            },
+            "lr": {
+                "lat": 50.90997299999968,
+                "lng": -0.12721
+            }
+        },
+        "maxRoutes": "",
+        "locations": [
+            {
+                "street": "",
+                "adminArea6": "",
+                "adminArea6Type": "Neighborhood",
+                "adminArea5": "London",
+                "adminArea5Type": "City",
+                "adminArea4": "London",
+                "adminArea4Type": "County",
+                "adminArea3": "ENG",
+                "adminArea3Type": "State",
+                "adminArea1": "GB",
+                "adminArea1Type": "Country",
+                "postalCode": "",
+                "geocodeQualityCode": "A5XAX",
+                "geocodeQuality": "CITY",
+                "dragPoint": false,
+                "sideOfStreet": "N",
+                "linkId": "0",
+                "unknownInput": "",
+                "type": "s",
+                "latLng": {
+                    "lat": 51.50643,
+                    "lng": -0.12719
+                },
+                "displayLatLng": {
+                    "lat": 51.50643,
+                    "lng": -0.12719
+                },
+                "mapUrl": ""
+            },
+            {
+                "street": "",
+                "adminArea6": "",
+                "adminArea6Type": "Neighborhood",
+                "adminArea5": "Southampton",
+                "adminArea5Type": "City",
+                "adminArea4": "Hampshire",
+                "adminArea4Type": "County",
+                "adminArea3": "ENG",
+                "adminArea3Type": "State",
+                "adminArea1": "GB",
+                "adminArea1Type": "Country",
+                "postalCode": "",
+                "geocodeQualityCode": "A5XAX",
+                "geocodeQuality": "CITY",
+                "dragPoint": false,
+                "sideOfStreet": "N",
+                "linkId": "0",
+                "unknownInput": "",
+                "type": "s",
+                "latLng": {
+                    "lat": 50.90999,
+                    "lng": -1.4071
+                },
+                "displayLatLng": {
+                    "lat": 50.90999,
+                    "lng": -1.4071
+                },
+                "mapUrl": ""
+            }
+        ],
+        "locationSequence": [
+            0,
+            1
+        ]
+    },
+    "info": {
+        "statuscode": 0,
+        "copyright": {
+            "text": "\u00a9 2022 MapQuest, Inc.",
+            "imageUrl": "http://api.mqcdn.com/res/mqlogo.gif",
+            "imageAltText": "\u00a9 2022 MapQuest, Inc."
+        },
+        "messages": []
+    }
+}

@@ -9,9 +9,13 @@ from ripe.atlas.sagan import TracerouteResult
 
 def get_measurements():
     """"Function that accepts a measurement ID value from the user """
-    msm_id = input("Insert a measurement id: ")
+    msm_id = input("Insert a measurement ID: ")
     measurement = Measurement(id=msm_id)
     print("Measurement type: ", measurement.type)
+    if measurement.type != 'ping' and measurement.type != 'traceroute':
+        print("Please insert a valid ID measurement for a ping or traceroute\n")
+        get_measurements()
+
     return msm_id, measurement.type
 
 
@@ -42,22 +46,19 @@ def get_traceroute_results(msm_id):
 
 def run():
     """Main Function"""
-    for costumer in range(3):
+    for costumer in range(2):
         print("=" * 75)
         print(f"\t\t\t\t\t\t     Costumer {costumer+1}\n")
-        msm_type = ""
+        results = []
+        msm_id, msm_type = get_measurements()
 
-        while True and msm_type != 'ping' or msm_type != 'traceroute':
-            results = []
+        while len(results) < 2:
+            if msm_type == 'ping':
+                results.append(get_ping_results(msm_id))
+
+            elif msm_type == 'traceroute':
+                results = get_traceroute_results(msm_id)
             msm_id, msm_type = get_measurements()
-        if msm_type == 'ping':
-            results.append(get_ping_results(msm_id))
-            while True and len(results) < 3:
-                msm_id, msm_type = get_measurements()
-                if msm_type == 'ping':
-                    results.append(get_ping_results(msm_id))
-        elif msm_type == 'traceroute':
-            results = get_traceroute_results(msm_id)
 
         print(f"\nStatic Route via ISP{results.index(min(results))+1}\n")
 

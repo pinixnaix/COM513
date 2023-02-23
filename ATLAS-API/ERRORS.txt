@@ -1,0 +1,12 @@
+{
+    "errors": {
+        "error": [
+            {
+                "error-message": "unknown element: routing in /rt:routing/rt:routing",
+                "error-path": "/ietf-routing:routing",
+                "error-tag": "malformed-message",
+                "error-type": "application"
+            }
+        ]
+    }
+}
