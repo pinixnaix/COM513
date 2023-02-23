@@ -5,7 +5,7 @@ import urllib3
 urllib3.disable_warnings()
 
 
-api_url = "https://192.168.56.3/restconf/data/ietf-routing:routing"
+api_url = "https://192.168.60.3/restconf/data/ietf-routing:routing"
 
 headers = {"Accept": "application/yang-data+json",
            "Content-type": "application/yang-data+json"
@@ -28,9 +28,9 @@ yangConfig = {
                                 "ietf-ipv4-unicast-routing:ipv4": {
                                     "route": [
                                         {
-                                            "destination-prefix": "100.100.100.100/24",
+                                            "destination-prefix": "30.30.30.3/32",
                                             "next-hop": {
-                                                "outgoing-interface": "Loopback3"
+                                                "outgoing-interface": "Loopback2"
                                             }
                                         }
                                     ]
@@ -46,9 +46,6 @@ yangConfig = {
 
 resp = requests.patch(api_url, data=json.dumps(yangConfig), auth=basicauth, headers=headers, verify=False)
 
-#result = resp.json()
-#with open("ERRORS.txt", "w", encoding="utf-8") as file:
- #   json.dump(result, file, ensure_ascii=False, indent=4)
 
 if 200 <= resp.status_code <= 299:
     print("STATUS OK: {}".format(resp.status_code))

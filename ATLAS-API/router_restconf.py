@@ -5,7 +5,7 @@ import urllib3
 urllib3.disable_warnings()
 
 
-api_url = "https://192.168.56.3/restconf/data/ietf-interfaces:interfaces"
+api_url = "https://192.168.60.3/restconf/data/ietf-interfaces:interfaces"
 
 headers = {"Accept": "application/yang-data+json",
            "Content-type": "application/yang-data+json"
@@ -22,8 +22,8 @@ yangConfig = {
         "ietf-ip:ipv4": {
             "address": [
                 {
-                    "ip": "30.30.30.30",
-                    "netmask": "255.255.255.0"
+                    "ip": "10.10.10.10",
+                    "netmask": "255.255.255.252"
                 }
             ]
         },
