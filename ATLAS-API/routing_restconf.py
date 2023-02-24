@@ -30,7 +30,7 @@ yangConfig = {
                                         {
                                             "destination-prefix": "30.30.30.3/32",
                                             "next-hop": {
-                                                "outgoing-interface": "Loopback2"
+                                                "outgoing-interface": "Loopback1"
                                             }
                                         }
                                     ]

@@ -15,8 +15,8 @@ basicauth = ("cisco", "cisco123!")
 
 yangConfig = {
     "ietf-interfaces:interface": {
-        "name": "Loopback3",
-        "description": "Loopback to ISP3",
+        "name": "Loopback1",
+        "description": "Loopback to ISP1",
         "type": "iana-if-type:softwareLoopback",
         "enabled": True,
         "ietf-ip:ipv4": {

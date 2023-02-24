@@ -5,8 +5,11 @@ import urllib3
 urllib3.disable_warnings()
 
 
-#api_url = "https://192.168.60.3/restconf/data/ietf-interfaces:interfaces"
-api_url = "https://192.168.60.3/restconf/data/ietf-routing:routing"
+api_url = "https://192.168.60.3/restconf/data/ietf-interfaces:interfaces"
+#api_url = "https://192.168.60.3/restconf/data/ietf-routing:routing"
+
+
+
 headers = {"Accept": "application/yang-data+json",
            "Content-type": "application/yang-data+json"
            }
