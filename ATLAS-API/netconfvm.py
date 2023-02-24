@@ -1,14 +1,20 @@
 import xml.dom.minidom
 import xmltodict
 from ncclient import manager
+import ncclient
 
-m = manager.connect(
-    host="192.168.60.3",
-    port=830,
-    username="cisco",
-    password="cisco123!",
-    hostkey_verify=False
-)
+try:
+    m = manager.connect(
+        host="192.168.60.3",
+        port=830,
+        username="cisco",
+        password="cisco123!",
+        hostkey_verify=False
+    )
+except ncclient.transport.errors.SSHError:
+    print("Unable to connect to router netconfig is not activated")
+
+
 netconf_filter = """
 <filter>
  <interfaces-state xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces"/>

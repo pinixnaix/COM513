@@ -32,4 +32,6 @@ netconf_data = """
 
 netconf_reply = m.edit_config(target="running", config=netconf_data)
 
+print("Success? {}".format(netconf_reply.ok))
+
 print(xml.dom.minidom.parseString(netconf_reply.xml).toprettyxml())
