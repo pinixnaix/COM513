@@ -52,6 +52,7 @@ def get_traceroute_results(msm_id):
         item = hop.median_rtt
         if item is not None:
             msm_rtt.append(item)
+
     return msm_rtt, average.origin
 
 
@@ -98,7 +99,7 @@ def get_customer_id(cust):
     results = []
     ip = []
 
-    while len(results) < 3:
+    for item in range(3):
         msm_id, msm_type = get_measurements()
         if msm_type == 'ping':
             rtt, origin = get_ping_results(msm_id)
@@ -106,11 +107,12 @@ def get_customer_id(cust):
                 results.append(rtt)
                 ip.append(origin)
         elif msm_type == 'traceroute':
-            rtt, ip = get_ping_results(msm_id)
+            rtt, origin = get_traceroute_results(msm_id)
             if rtt is not None:
                 results.append(rtt)
-                ip.append(ip)
-
+                ip.append(origin)
+    print(results)
+    print(ip)
     return [results.index(min(results))+1, ip[results.index(min(results))]]
 
 

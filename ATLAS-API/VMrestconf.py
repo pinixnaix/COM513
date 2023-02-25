@@ -6,8 +6,8 @@ urllib3.disable_warnings()
 
 basicauth = ("cisco", "cisco123!")
 
-api_url = "https://192.168.60.3/restconf/data/ietf-interfaces:interfaces"
-#api_url = "https://192.168.60.3/restconf/data/ietf-routing:routing"
+#api_url = "https://192.168.60.3/restconf/data/ietf-interfaces:interfaces"
+api_url = "https://192.168.60.3/restconf/data/ietf-routing:routing"
 
 url = "https://192.168.60.3/restconf"
 
