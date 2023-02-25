@@ -8,8 +8,6 @@ from ripe.atlas.sagan import TracerouteResult
 import json
 import requests
 import urllib3
-import xml.dom.minidom
-import xmltodict
 from ncclient import manager
 import ncclient
 
@@ -41,7 +39,7 @@ def get_ping_results(msm_id):
         print("\nMeasurement ID not valid!\n")
         run()
     else:
-        return average.rtt_average
+        return average.rtt_average, average.origin
 
 
 def get_traceroute_results(msm_id):
@@ -54,7 +52,7 @@ def get_traceroute_results(msm_id):
         item = hop.median_rtt
         if item is not None:
             msm_rtt.append(item)
-    return msm_rtt
+    return msm_rtt, average.origin
 
 
 def check_router_restconf():
@@ -98,15 +96,23 @@ def get_customer_id(cust):
     print("=" * 75)
     print(f"\t\t\t\t\t\t     Costumer {cust}\n")
     results = []
-    msm_id, msm_type = get_measurements()
-    while len(results) < 2:
-        if msm_type == 'ping':
-            results.append(get_ping_results(msm_id))
-        elif msm_type == 'traceroute':
-            results = get_traceroute_results(msm_id)
-        msm_id, msm_type = get_measurements()
+    ip = []
 
-    return [results.index(min(results))+1, msm_id]
+    while len(results) < 3:
+        msm_id, msm_type = get_measurements()
+        if msm_type == 'ping':
+            rtt, origin = get_ping_results(msm_id)
+            if rtt is not None:
+                results.append(rtt)
+                ip.append(origin)
+        elif msm_type == 'traceroute':
+            rtt, ip = get_ping_results(msm_id)
+            if rtt is not None:
+                results.append(rtt)
+                ip.append(ip)
+
+    return [results.index(min(results))+1, ip[results.index(min(results))]]
+
 
 def add_loopback_netconfig(isp):
     m = manager.connect(
@@ -143,12 +149,124 @@ def add_loopback_netconfig(isp):
     else:
         print(f"Error adding Loopback{isp}")
 
-def add_loopback_restconfig():
-    return
-def add_static_netconfig():
-   return
-def add_static_restconfig():
-    return
+
+def add_loopback_restconfig(cust):
+    api_url = "https://192.168.60.3/restconf/data/ietf-interfaces:interfaces"
+    yang_config = {
+        "ietf-interfaces:interface": {
+            "name": "Loopback"+str(cust),
+            "description": "Loopback to ISP"+str(cust),
+            "type": "iana-if-type:softwareLoopback",
+            "enabled": True,
+            "ietf-ip:ipv4": {
+                "address": [
+                    {
+                        "ip": str(cust)+"0.0.0.1",
+                        "netmask": "255.0.0.0"
+                    }
+                ]
+            },
+            "ietf-ip:ipv6": {}
+        }
+    }
+
+    resp = requests.post(api_url, data=json.dumps(yang_config), auth=basicauth, headers=headers, verify=False)
+
+    if 200 <= resp.status_code <= 299:
+        print(f"Loopback{cust} with a Link to ISP{cust} added successfully!!")
+    else:
+        print(f"Error adding Loopback{cust}")
+
+
+def add_static_netconfig(isp, ip):
+    print("=" * 75)
+    print("Auto Configuration of a static route")
+    m = manager.connect(
+        host="192.168.60.3",
+        port=830,
+        username="cisco",
+        password="cisco123!",
+        hostkey_verify=False
+    )
+
+    netconf_data = """
+    <config>
+       <routing xmlns="urn:ietf:params:xml:ns:yang:ietf-routing">
+          <routing-instance>
+             <name>default</name>
+             <description>default-vrf [read-only]</description>
+             <interfaces/>
+             <routing-protocols>
+                <routing-protocol>
+                   <type>static</type>
+                   <name>1</name>
+                   <static-routes>
+                      <ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ipv4-unicast-routing">
+
+                         <route>
+                            <destination-prefix>"""+str(ip)+"""/32</destination-prefix>
+                            <next-hop>
+                               <outgoing-interface>Loopback"""+str(isp)+"""</outgoing-interface>
+                            </next-hop>
+                         </route>
+                      </ipv4>
+                   </static-routes>
+                </routing-protocol>
+             </routing-protocols>
+          </routing-instance>
+       </routing>
+    </config>
+    """
+
+    netconf_reply = m.edit_config(target="running", config=netconf_data)
+    if netconf_reply.ok is True:
+        print(f"Configuration of a static route to {ip} via Loopback{isp}")
+    else:
+        print("Error in the configuration of a static route")
+
+
+def add_static_restconfig(isp, ip):
+    print("=" * 75)
+    print("Auto Configuration of a static route")
+    api_url = "https://192.168.60.3/restconf/data/ietf-routing:routing"
+    yang_config = {
+        "ietf-routing:routing": {
+            "routing-instance": [
+                {
+                    "name": "default",
+                    "description": "default-vrf [read-only]",
+                    "routing-protocols": {
+                        "routing-protocol": [
+                            {
+                                "type": "ietf-routing:static",
+                                "name": "1",
+                                "static-routes": {
+                                    "ietf-ipv4-unicast-routing:ipv4": {
+                                        "route": [
+                                            {
+                                                "destination-prefix": str(ip)+"/32",
+                                                "next-hop": {
+                                                    "outgoing-interface": "Loopback"+str(isp)
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+
+    resp = requests.patch(api_url, data=json.dumps(yang_config), auth=basicauth, headers=headers, verify=False)
+
+    if 200 <= resp.status_code <= 299:
+        print(f"Configuration of a static route to {ip} via Loopback{isp}")
+    else:
+        print("Error in the configuration of a static route")
+
 
 def run():
     """Main Function"""
@@ -162,14 +280,23 @@ def run():
         print("RESTCONF is enabled!\n")
     else:
         print("RESTCONF is disabled!\n")
+
+    option = menu()
     print()
     print("=" * 75)
     print("Auto Loopback configuration")
-    for customer in range(3):
-        add_loopback_netconfig(customer+1)
-
-    #isp, msm_id = get_customer_id(customer)
-    #option = menu()
+    if option == 1:
+        for loop in range(3):
+            add_loopback_restconfig(loop+1)
+        for customer in range(3):
+            isp, ip = get_customer_id(customer+1)
+            add_static_restconfig(isp, ip)
+    elif option == 2:
+        for loop in range(3):
+            add_loopback_netconfig(loop+1)
+        for customer in range(3):
+            isp, ip = get_customer_id(customer+1)
+            add_static_netconfig(isp, ip)
 
 
 if __name__ == "__main__":
