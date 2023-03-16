@@ -39,7 +39,7 @@ def get_ping_results(msm_id):
         print("\nMeasurement ID not valid!\n")
         run()
     else:
-        return average.rtt_average, average.origin
+        return average.rtt_average, average.destination_address
 
 
 def get_traceroute_results(msm_id):
@@ -53,7 +53,7 @@ def get_traceroute_results(msm_id):
         if item is not None:
             msm_rtt.append(item)
 
-    return msm_rtt, average.origin
+    return msm_rtt, average.destination_address
 
 
 def check_router_restconf():
@@ -66,7 +66,7 @@ def check_router_restconf():
 
 def check_router_netconf():
     try:
-        m = manager.connect(
+        manager.connect(
             host="192.168.60.3",
             port=830,
             username="cisco",
@@ -111,8 +111,6 @@ def get_customer_id(cust):
             if rtt is not None:
                 results.append(rtt)
                 ip.append(origin)
-    print(results)
-    print(ip)
     return [results.index(min(results))+1, ip[results.index(min(results))]]
 
 

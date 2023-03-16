@@ -8,8 +8,8 @@ m = manager.connect(
     password="cisco123!",
     hostkey_verify=False
 )
-
-netconf_data = """
+"""
+netconf_data =
 <config>
    <routing xmlns="urn:ietf:params:xml:ns:yang:ietf-routing">
       <routing-instance>
@@ -27,6 +27,7 @@ netconf_data = """
                         <destination-prefix>20.20.20.2/32</destination-prefix>
                         <next-hop>
                            <outgoing-interface>Loopback2</outgoing-interface>
+                           <next-hop-address>
                         </next-hop>
                      </route>
                   </ipv4>
@@ -36,8 +37,18 @@ netconf_data = """
       </routing-instance>
    </routing>
 </config>
-"""
+
 
 netconf_reply = m.edit_config(target="running", config=netconf_data)
+
+print(xml.dom.minidom.parseString(netconf_reply.xml).toprettyxml())
+"""
+data = """
+<?xml version="1.0" encoding="utf-8"?>
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="">
+  <cisco-ia:save-config xmlns:cisco-ia="http://cisco.com/yang/cisco-ia"/>
+</rpc>
+"""
+netconf_reply = m.edit_config(target="running", config=data)
 
 print(xml.dom.minidom.parseString(netconf_reply.xml).toprettyxml())

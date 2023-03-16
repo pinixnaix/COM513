@@ -31,6 +31,25 @@ netconf_route = """
  <routing xmlns="urn:ietf:params:xml:ns:yang:ietf-routing"/>
 </filter>
 """
+coprunsta = """
+<?xml version="1.0" encoding="utf-8"?>
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="">
+  <cisco-ia:save-config xmlns:cisco-ia="http://cisco.com/yang/cisco-ia"/>
+</rpc>
+"""
+
+"""
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="12">
+    <copy-config>
+        <target>
+            <startup/>
+         </target>
+         <source>
+           <running/>
+         </source>
+    </copy-config>
+</rpc>
+"""
 
 netconf_run = m.get_config(source="running")
 netconf_reply = m.get(filter=netconf_filter)
@@ -46,10 +65,11 @@ for interface in netconf_reply_dict["rpc-reply"]["data"]["interfaces-state"]["in
     print("Name: {} MAC: {}".format(
                 interface["name"],
                 interface["phys-address"]))
-
-for interface in netconf_reply_port["rpc-reply"]["data"]["interfaces"]["interface"]:
+data = netconf_reply_port["rpc-reply"]["data"]["interfaces"]["interface"]
+for interface in data:
+    name = interface['name']
     print("\nName: {}".format(interface["name"]))
-    print("Description: {}".format(interface["description"]))
+   # print("Description: {}".format(interface["description"]))
     if len(interface["ipv4"]) > 1:
         print("IPV4: {}".format(interface["ipv4"]["address"]["ip"]))
         print("Netmask: {}".format(interface["ipv4"]["address"]["netmask"]))
@@ -60,6 +80,7 @@ for interface in netconf_reply_port["rpc-reply"]["data"]["interfaces"]["interfac
 for interface in netconf_reply_static["rpc-reply"]["data"]["routing"]["routing-instance"]["routing-protocols"]["routing-protocol"]["static-routes"]["ipv4"]["route"]:
     print("\n-------------------------")
     print("      Static routes \n")
+    print(interface)
+    #print("Destination: {}".format(interface["destination-prefix"]))
+    #print("Destination: {}".format(interface["next-hop"]["outgoing-interface"]))
 
-    print("Destination: {}".format(interface["destination-prefix"]))
-    print("Destination: {}".format(interface["next-hop"]["outgoing-interface"]))
