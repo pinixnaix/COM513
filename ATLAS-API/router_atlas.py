@@ -8,7 +8,7 @@ from ripe.atlas.sagan import TracerouteResult
 import json
 import requests
 import urllib3
-from ncclient import manager
+from ncclient import manager, xml_
 import ncclient
 
 urllib3.disable_warnings()
@@ -148,6 +148,7 @@ def add_loopback_netconfig(isp):
         print(f"Loopback{isp} with a Link to ISP{isp} added successfully!!")
     else:
         print(f"Error adding Loopback{isp}")
+    m.close_session()
 
 
 def add_loopback_restconfig(cust):
@@ -223,6 +224,7 @@ def add_static_netconfig(isp, ip):
         print(f"Configuration of a static route to {ip} via Loopback{isp}")
     else:
         print("Error in the configuration of a static route")
+    m.close_session()
 
 
 def add_static_restconfig(isp, ip):
@@ -268,6 +270,31 @@ def add_static_restconfig(isp, ip):
         print("Error in the configuration of a static route")
 
 
+def save_config_netconf():
+    m = manager.connect(
+        host="192.168.60.3",
+        port=830,
+        username="cisco",
+        password="cisco123!",
+        hostkey_verify=False
+    )
+
+    save = """
+    <cisco-ia:save-config xmlns:cisco-ia="http://cisco.com/yang/cisco-ia"/>
+    """
+    m.dispatch(xml_.to_ele(save))
+    m.close_session()
+
+
+def save_config_restconf():
+    api_url = "https://192.168.60.3/restconf/operations/cisco-ia:save-config"
+    resp = requests.post(api_url, auth=basicauth, headers=headers, verify=False)
+    if 200 <= resp.status_code <= 299:
+        print(f"Running Config saved successful into Startup Config")
+    else:
+        print("Error in Running Config saved successful into Startup Config")
+
+
 def run():
     """Main Function"""
     print("=" * 75)
@@ -291,12 +318,14 @@ def run():
         for customer in range(3):
             isp, ip = get_customer_id(customer+1)
             add_static_restconfig(isp, ip)
+        save_config_restconf()
     elif option == 2:
         for loop in range(3):
             add_loopback_netconfig(loop+1)
         for customer in range(3):
             isp, ip = get_customer_id(customer+1)
             add_static_netconfig(isp, ip)
+        save_config_netconf()
 
 
 if __name__ == "__main__":
