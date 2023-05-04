@@ -104,11 +104,13 @@ def get_customer_id(cust):
         if msm_type == 'ping':
             rtt, origin = get_ping_results(msm_id)
             if rtt is not None:
+                print(rtt)
                 results.append(rtt)
                 ip.append(origin)
         elif msm_type == 'traceroute':
             rtt, origin = get_traceroute_results(msm_id)
             if rtt is not None:
+                print(rtt)
                 results.append(rtt)
                 ip.append(origin)
     return [results.index(min(results))+1, ip[results.index(min(results))]]

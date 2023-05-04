@@ -21,22 +21,31 @@ def get_results(msmid):
     kwargs = {"msm_id": msmid}
     msm_result = {}
     sucess, results = AtlasLatestRequest(**kwargs).create()
-
     msm_result = results[0]
 
     if not sucess:
         print("\nMeasurement ID not valid!\n")
         run()
     else:
-        with open("RIPEmeasurements.txt", "w", encoding="utf-8") as file:
-            json.dump(results, file, ensure_ascii=False, indent=4)
+        check_type(msmid, results)
         return msm_result
+
+
+def check_type(msmid, results):
+    """"Function that detects the measurement ID type of the RIPE atlas database """
+    measurement = Measurement(id=msmid)
+    print("\nMeasurement type: ", measurement.type)
+    if measurement.type == 'ping' or measurement.type == 'traceroute':
+        with open("RIPEmeasurements.txt", "a", encoding="utf-8") as file:
+            json.dump(results, file, ensure_ascii=False, indent=4)
+    else:
+        print("Please!! Only ping or traceroute measurements!!")
+        run()
 
 
 def display_results(msmid, results):
     """"Function that displays the results from the RIPE atlas database """
     measurement = Measurement(id=msmid)
-    print("\nMeasurement type: ", measurement.type)
     if measurement.type == 'ping':
         data = PingResult(results)
         print("\nAddress Family: IPV", data.af)
