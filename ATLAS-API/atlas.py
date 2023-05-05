@@ -19,14 +19,15 @@ def get_id():
 def get_results(msmid):
     """"Function that requests the results from the RIPE atlas database """
     kwargs = {"msm_id": msmid}
-    msm_result = {}
     sucess, results = AtlasLatestRequest(**kwargs).create()
     msm_result = results[0]
-
+    # If statement to verify if the measurement ID given is valid
     if not sucess:
+        # If the measurement is not valid, calls the main function
         print("\nMeasurement ID not valid!\n")
         run()
     else:
+        # If is valid calls the function check_type to detect the measurement ID type
         check_type(msmid, results)
         return msm_result
 
