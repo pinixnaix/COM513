@@ -9,7 +9,6 @@ import json
 import requests
 import urllib3
 from ncclient import manager, xml_
-import ncclient
 
 urllib3.disable_warnings()
 basicauth = ("cisco", "cisco123!")
@@ -20,62 +19,54 @@ headers = {"Accept": "application/yang-data+json",
 
 def get_measurements():
     """"Function that accepts a measurement ID value from the user """
-    msm_id = input("Insert a measurement ID: ")
-    measurement = Measurement(id=msm_id)
-    print("Measurement type: ", measurement.type)
-    if measurement.type != 'ping' and measurement.type != 'traceroute':
-        print("Please insert a valid ID measurement for a ping or traceroute\n")
-        get_measurements()
+    while True:
+        msm_id = input("Insert a measurement ID: ")
+        kwargs = {"msm_id": msm_id}
+        measurement = Measurement(id=msm_id)
+        success, results = AtlasLatestRequest(**kwargs).create()
+        if success:
+            if check_type(measurement):
+                break
+        else:
+            print("---Measurement ID not valid!---")
 
-    return msm_id, measurement.type
+    return measurement.type, results
 
 
-def get_ping_results(msm_id):
-    """"Function that requests the Ping results """
-    kwargs = {"msm_id": msm_id}
-    success, results = AtlasLatestRequest(**kwargs).create()
-    average = PingResult(results[0])
-    if not success:
-        print("\nMeasurement ID not valid!\n")
-        run()
+def check_type(measurement):
+    """"Function that detects the measurement ID type of the RIPE atlas database """
+    print("\nMeasurement type: ", measurement.type)
+    # If statement to verify the measurement ID type is a ping or a traceroute
+    if measurement.type == 'ping' or measurement.type == 'traceroute':
+        return True
     else:
-        return average.rtt_average, average.destination_address
+        # if is other type prints an error message
+        print("---Please!! Only ping or traceroute measurements!!---")
+        return False
 
 
-def get_traceroute_results(msm_id):
-    """"Function that requests the traceroute results """
-    kwargs = {"msm_id": msm_id}
-    success, results = AtlasLatestRequest(**kwargs).create()
+def get_ping_results(results):
+    """"Function that gets the Ping results """
+    average = PingResult(results[0])
+    return average.rtt_average, average.destination_address
+
+
+def get_traceroute_results(results):
+    """"Function that gets the traceroute results """
     average = TracerouteResult(results[0])
     msm_rtt = []
     for hop in average.hops:
-        item = hop.median_rtt
-        if item is not None:
-            msm_rtt.append(item)
+        if hop.median_rtt is not None:
+            msm_rtt.append(hop.median_rtt)
 
-    return msm_rtt, average.destination_address
-
-
-def check_router_restconf():
-    api_url = "https://192.168.60.3/restconf"
-    check = requests.get(api_url, auth=basicauth, verify=False)
-    if check.status_code == 200:
-        return True
-    return False
-
-
-def check_router_netconf():
-    try:
-        manager.connect(
-            host="192.168.60.3",
-            port=830,
-            username="cisco",
-            password="cisco123!",
-            hostkey_verify=False
-        )
-    except ncclient.transport.errors.SSHError:
-        return False
-    return True
+    # calculates the median round trip of all the hops median round trips
+    new_mrtt = sorted(msm_rtt)
+    mid = len(new_mrtt) // 2
+    res = (new_mrtt[mid] + new_mrtt[-mid - 1]) / 2
+    print(msm_rtt)
+    print(new_mrtt)
+    print(res)
+    return res, average.destination_address
 
 
 def menu():
@@ -84,36 +75,36 @@ def menu():
     choices = [1, 2]
     print("[1] RESTCONF")
     print("[2] NETCONF")
-    option = int(input("Option: "))
-    if option in choices:
-        return option
-    else:
-        print("Wrong Option!!!!!")
-        menu()
+    while True:
+        option = int(input("Option: "))
+        if option in choices:
+            break
+        print("---Wrong Option! Please choose a correct option!---")
+    return option
 
 
 def get_customer_id(cust):
     print()
     print("=" * 75)
     print(f"\t\t\t\t\t\t     Costumer {cust}\n")
-    results = []
+    average = []
     ip = []
 
     for item in range(3):
-        msm_id, msm_type = get_measurements()
+        msm_type, results = get_measurements()
         if msm_type == 'ping':
-            rtt, origin = get_ping_results(msm_id)
+            rtt, origin = get_ping_results(results)
             if rtt is not None:
                 print(rtt)
-                results.append(rtt)
+                average.append(rtt)
                 ip.append(origin)
         elif msm_type == 'traceroute':
-            rtt, origin = get_traceroute_results(msm_id)
+            rtt, origin = get_traceroute_results(results)
             if rtt is not None:
                 print(rtt)
-                results.append(rtt)
+                average.append(rtt)
                 ip.append(origin)
-    return [results.index(min(results))+1, ip[results.index(min(results))]]
+    return [average.index(min(average))+1, ip[average.index(min(average))]]
 
 
 def add_loopback_netconfig(isp):
@@ -300,20 +291,11 @@ def save_config_restconf():
 def run():
     """Main Function"""
     print("=" * 75)
-    print("\t\t\t\t     Router Automation challenge!\n")
-    if check_router_netconf() is True:
-        print("NETCONF is enabled!")
-    else:
-        print("NETCONF is disabled!")
-    if check_router_restconf() is True:
-        print("RESTCONF is enabled!\n")
-    else:
-        print("RESTCONF is disabled!\n")
+    print("\t\t\t\t     Router Automation challenge!")
 
     option = menu()
-    print()
     print("=" * 75)
-    print("Auto Loopback configuration")
+    print("\t\t\t\t     Auto Loopback configuration\n")
     if option == 1:
         for loop in range(3):
             add_loopback_restconfig(loop+1)
