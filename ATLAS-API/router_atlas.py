@@ -223,7 +223,7 @@ def add_loopback_restconfig(cust):
     }
 
     resp = requests.post(api_url, data=json.dumps(yang_config), auth=basicauth, headers=headers, verify=False)
-
+    # If statement to verify the request made was successful
     if 200 <= resp.status_code <= 299:
         print(f"Loopback{cust} with a Link to ISP{cust} added successfully!!")
     else:
@@ -273,6 +273,7 @@ def add_static_netconfig(isp, ip):
     """
 
     netconf_reply = m.edit_config(target="running", config=netconf_data)
+
     if netconf_reply.ok is True:
         print(f"Configuration of a static route to {ip} via Loopback{isp}")
     else:
@@ -318,7 +319,7 @@ def add_static_restconfig(isp, ip):
     }
 
     resp = requests.patch(api_url, data=json.dumps(yang_config), auth=basicauth, headers=headers, verify=False)
-
+    # If statement to verify the request made was successful
     if 200 <= resp.status_code <= 299:
         print(f"Configuration of a static route to {ip} via Loopback{isp}")
     else:
@@ -343,6 +344,7 @@ def save_config_restconf():
     """Function to save the running configuration into the startup configuration to the router using RESTCONF """
     api_url = "https://"+router_ip_add+"/restconf/operations/cisco-ia:save-config"
     resp = requests.post(api_url, auth=basicauth, headers=headers, verify=False)
+    # If statement to verify the request made was successful
     if 200 <= resp.status_code <= 299:
         print(f"Running Config saved successful into Startup Config")
     else:
@@ -353,23 +355,32 @@ def run():
     """Main Function"""
     print("=" * 75)
     print("\t\t\t\t     Router Automation challenge!")
-
+    # calls the function to print a menu in the console for the user to chose between NETCONF or RESTCONF
     option = menu()
     print("=" * 75)
     print("\t\t\t\t     Auto Loopback configuration\n")
+    # If statement to verify if the chosen option is 1 - to use RESTCONF
     if option == 1:
+        # for loop to add 3 loopback interfaces using RESTCONF
         for loop in range(3):
             add_loopback_restconfig(loop+1)
+        # for loop to add a static route for the 3 customers using RESTCONF
         for customer in range(3):
             isp, ip = get_customer_id(customer+1)
             add_static_restconfig(isp, ip)
+        # call the function to save the configuration on the router using RESTCONF
         save_config_restconf()
+
+    # If statement to verify if the chosen option is 2 - to use NETCONF
     elif option == 2:
+        # for loop to add 3 loopback interfaces using NETCONF
         for loop in range(3):
             add_loopback_netconfig(loop+1)
+        # for loop to add a static route for the 3 customers using NETCONF
         for customer in range(3):
             isp, ip = get_customer_id(customer+1)
             add_static_netconfig(isp, ip)
+        # call the function to save the configuration on the router using NETCONF
         save_config_netconf()
 
 
