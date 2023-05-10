@@ -328,6 +328,7 @@ def add_static_restconfig(isp, ip):
 
 def save_config_netconf():
     """Function to save the running configuration into the startup configuration to the router using NETCONF """
+    print("\n"+"=" * 75)
     m = manager.connect(
         host=router_ip_add,
         port=830,
@@ -336,12 +337,18 @@ def save_config_netconf():
         hostkey_verify=False
     )
     save = """<cisco-ia:save-config xmlns:cisco-ia="http://cisco.com/yang/cisco-ia"/>"""
-    m.dispatch(xml_.to_ele(save))
+    reply = m.dispatch(xml_.to_ele(save))
+    if reply.ok is True:
+        print(f"Running Config saved successful into Startup Config")
+    else:
+        print("Error in Running Config saved successful into Startup Config")
+    print("=" * 75)
     m.close_session()
 
 
 def save_config_restconf():
     """Function to save the running configuration into the startup configuration to the router using RESTCONF """
+    print("\n"+"=" * 75)
     api_url = "https://"+router_ip_add+"/restconf/operations/cisco-ia:save-config"
     resp = requests.post(api_url, auth=basicauth, headers=headers, verify=False)
     # If statement to verify the request made was successful
@@ -349,6 +356,7 @@ def save_config_restconf():
         print(f"Running Config saved successful into Startup Config")
     else:
         print("Error in Running Config saved successful into Startup Config")
+    print("=" * 75)
 
 
 def run():

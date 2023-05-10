@@ -1,5 +1,6 @@
 from ncclient import manager, xml_
 
+print("\n"+"=" * 75)
 m = manager.connect(
     host="192.168.60.3",
     port=830,
@@ -12,5 +13,8 @@ save = """
 <cisco-ia:save-config xmlns:cisco-ia="http://cisco.com/yang/cisco-ia"/>
 """
 reply = m.dispatch(xml_.to_ele(save))
-print(reply)
+if reply.ok is True:
+    print(reply)
+
+print("=" * 75)
 m.close_session()
